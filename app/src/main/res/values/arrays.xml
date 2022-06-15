@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="table">
+        <item>全部</item>
+        <item>正常</item>
+        <item>异常</item>
+        <item>未采集</item>
+    </string-array>
+    <string-array name="table2">
+        <item>自习</item>
+        <item>数学</item>
+        <item>英语</item>
+        <item>语文</item>
+        <item>体育</item>
+    </string-array>
+
+    <string-array name="table3">
+        <item>“需努力”</item>
+        <item>“合格“</item>
+        <item>“良好“</item>
+        <item>“优秀“</item>
+        <item>“上佳“</item>
+    </string-array>
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/ite5_1"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginBottom="@dimen/dp5"
+        android:padding="@dimen/dp10">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/s43"
+            android:layout_height="@dimen/s43"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:src="@mipmap/avasss" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/sp12"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#666"
+            android:textSize="15sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/healthStatusName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp4"
+            android:gravity="center"
+            android:text="今日未采集"
+            android:textColor="#ff202020"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="@dimen/sp20"
+            android:layout_height="@dimen/sp20"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:rotation="180"
+            android:src="@mipmap/back" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.cheergotech"
+        minSdk rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        /**添加多 dex分包支持*/
+        multiDexEnabled true
+
+        //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+        //ndk { abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64' }
+        ndk { abiFilters 'armeabi' ,'arm64-v8a'}
+
+
+    }
+
+    //调试加速
+    if (rootProject.hasProperty("devBuild")) {
+        splits.abi.enable = false
+        splits.density.enable = false
+    }
+
+    //调试禁用PNG压缩
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+
+    //打包时候报错处理
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    //签名信息配置
+    signingConfigs {
+        release {
+            keyAlias 'demo'
+            keyPassword '123456'
+            storePassword '123456'
+            storeFile file('D:\\cheergotech\\key\\key.jks')
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true    //开启混淆代码
+            zipAlignEnabled true  //压缩优化
+            shrinkResources true  //移出无用资源
+
+            //正式上线版
+            buildConfigField 'String', 'CHAT_API', quotWrapper("https://wcharpays.focusea.com/hz")
+
+            //bugly上报
+            buildConfigField 'String', 'BUGLY_APPID', quotWrapper("bf581d4b3a")
+
+            //微信开放平台分享
+            buildConfigField 'String', 'APP_ID', quotWrapper("")
+            buildConfigField 'String', 'AppSecret', quotWrapper("")
+
+            buildConfigField 'int', 'TYPE', '1'
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "isWifiProxy", "false"
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            //调试测试版
+            //buildConfigField 'String', 'CHAT_API', quotWrapper("https://wcharpays.focusea.com/hz")
+            buildConfigField 'String', 'CHAT_API', quotWrapper("http://hbsch.natapp1.cc/api")
+
+            //bugly上报
+            buildConfigField 'String', 'BUGLY_APPID', quotWrapper("bf581d4b3a")
+
+            //微信开放平台分享
+            buildConfigField 'String', 'APP_ID', quotWrapper("")
+            buildConfigField 'String', 'AppSecret', quotWrapper("")
+
+            buildConfigField 'int', 'TYPE', '1'
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "isWifiProxy", "false"
+
+            signingConfig signingConfigs.release
+        }
+
+
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+String quotWrapper(key) {
+    if (key == null) {
+        return "\"\""
+    }
+    return "\"".concat(key).concat("\"")
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'org.jetbrains:annotations:23.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.google.android.gms:play-services-basement:17.6.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Butter Knife，专门为Android View设计的绑定注解的依赖:
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+    //Okhttp3基本使用
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.2'
+
+    //谷歌JSON解析
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    //加载第三方图片
+    implementation 'com.github.bumptech.glide:glide:4.13.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
+
+    //Transformations 主要处理图片模糊 设置 圆角和高斯模糊
+    //https://github.com/wasabeef/glide-transformations
+    implementation 'jp.wasabeef:glide-transformations:4.3.0'
+
+    //CircleImageView主要处理图片头像圆型
+    //https://github.com/hdodenhof/CircleImageView#circleimageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //下拉刷新
+    // 下拉刷新，上拉加载
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.3'
+    // 没有使用特殊Header,可以不加这一依赖
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.3'
+
+    //3D地图so及jar 添加导航sdk的依赖已包含3D地图
+    //implementation 'com.amap.api:3dmap:latest.integration'
+    //定位功能
+    implementation 'com.amap.api:location:latest.integration'
+    //搜索功能
+    implementation 'com.amap.api:search:latest.integration'
+    //添加导航sdk的依赖：
+    implementation 'com.amap.api:navi-3dmap:8.1.0_3dmap8.1.0'
+
+    //腾讯bugy
+    implementation 'com.tencent.bugly:crashreport:4.0.4'
+
+    //图片压缩处理
+    implementation 'top.zibin:Luban:1.1.8'
+
+    //https://www.kancloud.cn/fymod/android/584138
+    //本篇使用了第三方裁剪图片库ucrop，github地址：https://github.com/Yalantis/uCrop
+    implementation 'com.github.yalantis:ucrop:2.2.6'
+    implementation 'com.github.yalantis:ucrop:2.2.6-native'
+
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    api project(path: ':SelectImage')
+
+}

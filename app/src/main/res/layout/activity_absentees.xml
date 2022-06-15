@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F8FAFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".UI.activity.leave.activity_absentees">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.cheergotech.widget.Backtitle
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title_name="缺勤人数" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp4"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FF0000"
+                android:textSize="@dimen/sp20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp20"
+                android:gravity="center"
+                android:text="人缺勤"
+                android:textColor="#ff202020"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/smarxml" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eroot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:drawableTop="@mipmap/eorr"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:visibility="gone"
+        android:textColor="@color/dbb"
+         />
+
+</RelativeLayout>

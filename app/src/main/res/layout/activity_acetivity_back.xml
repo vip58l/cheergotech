@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".UI.activity.joblist.acetivity_back">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="作业批改" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/booter"
+        android:layout_below="@+id/backtitle"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/ctitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:text="给 N 同学作业的评语"
+            android:textColor="#ff929dbb"
+            android:textSize="13sp" />
+
+        <com.cheergotech.widget.widgetimage7
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            app:w7_msg1=""
+            app:w7_msg2=""
+            app:w7_name="本次成绩" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.cheergotech.widget.RatingStar
+                android:id="@+id/ratingStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:starFocus="@mipmap/star_selected"
+                app:starNormal="@mipmap/star_normal"
+                app:starNumber="5" />
+
+            <TextView
+                android:id="@+id/sexmsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="#ff929dbb"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <com.cheergotech.widget.widgetimage7
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            app:w7_msg1=""
+            app:w7_msg2=""
+            app:w7_name="评语" />
+
+        <EditText
+            android:id="@+id/edittitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/e12dp"
+            android:gravity="left|top"
+            android:lines="5"
+            android:minLines="5"
+            android:padding="@dimen/dp10"
+            android:textColor="#ff202020"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/booter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp20"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/send1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/items25"
+            android:paddingLeft="@dimen/dp30"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp30"
+            android:paddingBottom="@dimen/dp10"
+            android:text="退回重做"
+            android:textColor="#ff929dbb"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="@dimen/dp50"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/send2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/it325dp"
+            android:paddingLeft="@dimen/dp30"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp30"
+            android:paddingBottom="@dimen/dp10"
+            android:text="确认批改"
+            android:textColor="#ffffffff"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

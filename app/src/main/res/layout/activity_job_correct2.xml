@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".UI.activity.joblist.activity_job_correct">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="-" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/booter"
+        android:layout_below="@+id/backtitle"
+        android:layout_marginBottom="@dimen/dp20"
+        android:padding="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.cheergotech.widget.widgetimage7
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                app:w7_msg1=""
+                app:w7_msg2=""
+                app:w7_name="内容" />
+
+            <EditText
+                android:id="@+id/e1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s120"
+                android:background="@drawable/item12dp"
+                android:enabled="false"
+                android:gravity="left|top"
+                android:padding="@dimen/dp10"
+                android:textColor="#ff929dbb"
+                android:textSize="@dimen/sp14" />
+
+            <com.cheergotech.widget.widgetimage7
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                app:w7_msg1=""
+                app:w7_msg2=""
+                app:w7_name="附件" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/play"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:background="@drawable/item23dp"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingRight="@dimen/dp10"
+                    android:visibility="gone"
+                    android:paddingBottom="@dimen/dp5"
+                    >
+
+                    <ImageView
+                        android:id="@+id/play1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:src="@mipmap/play1"
+                        android:textColor="#ff929dbb"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:src="@mipmap/play2"
+                        android:textColor="#ff929dbb"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#ff929dbb"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0s"
+                        android:textColor="#ff929dbb"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.cheergotech.widget.widgetimage7
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                app:w7_msg1=""
+                app:w7_msg2=""
+                app:w7_name="本次成绩" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/dp20"
+                android:paddingRight="@dimen/dp20">
+
+                <com.cheergotech.widget.RatingStar
+                    android:id="@+id/ratingStar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp40"
+                    app:starFocus="@mipmap/star_selected"
+                    app:starNormal="@mipmap/star_normal"
+                    app:starNumber="5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="#ff929dbb"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/sexmsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="#ff929dbb"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <com.cheergotech.widget.widgetimage7
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp40"
+                app:w7_msg1=""
+                app:w7_msg2="30/20"
+                app:w7_name="评语" />
+
+            <EditText
+                android:id="@+id/e2"
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s150"
+                android:background="@drawable/e12dp"
+                android:gravity="left|top"
+                android:padding="@dimen/dp10"
+                android:textColor="#ff202020"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/booter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp20"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+        >
+
+        <TextView
+            android:id="@+id/send_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/items25"
+            android:enabled="false"
+            android:paddingLeft="@dimen/dp30"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp30"
+            android:paddingBottom="@dimen/dp10"
+            android:text="退回重做"
+            android:textColor="#ff929dbb"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="@dimen/dp50"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/send_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/it325dp"
+            android:paddingLeft="@dimen/dp30"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp30"
+            android:paddingBottom="@dimen/dp10"
+            android:text="确认批改"
+            android:textColor="#ffffffff"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

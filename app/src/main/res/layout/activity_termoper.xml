@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".UI.activity.Term.activity_termo">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_marginBottom="@dimen/sp20"
+        app:title_name="学期评语" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/booter"
+        android:layout_below="@+id/backtitle"
+        android:layout_marginBottom="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:padding="@dimen/s5"
+                android:text="给x同学的评语"
+                android:textColor="#ff929dbb"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/e5"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/linne">
+
+                    <TextView
+                        android:id="@+id/title"
+                        style="@style/Appmm"
+                        android:text="综合评级"
+                        android:textColor="#ff0077ff"
+
+                        android:textStyle="bold" />
+
+                    <LinearLayout style="@style/appmss">
+
+                        <com.cheergotech.widget.RatingStar
+                            android:id="@+id/p1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dp40"
+                            android:enabled="false"
+                            app:starFocus="@mipmap/star_selected"
+                            app:starNormal="@mipmap/star_normal"
+                            app:starNumber="5" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#ff0077ff"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/B0BDE1" />
+
+                <LinearLayout style="@style/linne">
+
+                    <TextView
+                        style="@style/Appmm"
+                        android:text="学习" />
+
+                    <LinearLayout style="@style/appmss">
+
+                        <com.cheergotech.widget.RatingStar
+                            android:id="@+id/p2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            app:starFocus="@mipmap/star_selected"
+                            app:starNormal="@mipmap/star_normal"
+                            app:starNumber="5" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        android:textColor="#ff0077ff"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/linne">
+
+                    <TextView
+                        style="@style/Appmm"
+                        android:text="课外" />
+
+                    <LinearLayout style="@style/appmss">
+
+                        <com.cheergotech.widget.RatingStar
+                            android:id="@+id/p3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            app:starFocus="@mipmap/star_selected"
+                            app:starNormal="@mipmap/star_normal"
+                            app:starNumber="5" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        android:textColor="#ff0077ff"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/linne">
+
+                    <TextView
+
+                        style="@style/Appmm"
+                        android:text="体育" />
+
+                    <LinearLayout style="@style/appmss">
+
+                        <com.cheergotech.widget.RatingStar
+                            android:id="@+id/p4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            app:starFocus="@mipmap/star_selected"
+                            app:starNormal="@mipmap/star_normal"
+                            app:starNumber="5" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#ff0077ff"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/linne">
+
+                    <TextView
+
+                        style="@style/Appmm"
+                        android:text="人际" />
+
+                    <LinearLayout style="@style/appmss">
+
+                        <com.cheergotech.widget.RatingStar
+                            android:id="@+id/p5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            app:starFocus="@mipmap/star_selected"
+                            app:starNormal="@mipmap/star_normal"
+                            app:starNumber="5" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#ff0077ff"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/linne">
+
+                    <TextView
+                        style="@style/Appmm"
+                        android:text="性格" />
+
+                    <LinearLayout style="@style/appmss">
+
+                        <com.cheergotech.widget.RatingStar
+                            android:id="@+id/p6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            app:starFocus="@mipmap/star_selected"
+                            app:starNormal="@mipmap/star_normal"
+                            app:starNumber="5" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="#ff0077ff"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.cheergotech.widget.widgetimage7
+                android:id="@+id/widgetimage7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:padding="@dimen/dp10"
+                app:w7_msg1=""
+                app:w7_msg2=""
+                app:w7_name="评语" />
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp100"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/e5"
+                android:enabled="false"
+                android:gravity="left|top"
+                android:hint="输入内容"
+                android:maxLength="200"
+                android:maxLines="10"
+                android:minLines="5"
+                android:padding="@dimen/dp10"
+                android:textSize="@dimen/sp14" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/booter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/s32"
+        android:layout_marginRight="@dimen/s32"
+        android:layout_marginBottom="@dimen/dp30"
+        android:background="@drawable/it325dp"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

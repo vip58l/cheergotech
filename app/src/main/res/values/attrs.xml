@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="item_eorr">
+        <attr name="item_eorr_name" format="string" />
+        <attr name="item_eorr_msg1" format="string" />
+        <attr name="item_eorr_msg2" format="string" />
+        <attr name="item_eorr_src1" format="reference|color" />
+        <attr name="item_eorr_src2" format="reference|color" />
+        <attr name="item_eorr_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="item_eorr_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="home">
+        <attr name="home_textSize" format="dimension" />
+        <attr name="home_name" format="string" />
+        <attr name="home_msg" format="string" />
+        <attr name="home_src" format="reference|color" />
+        <attr name="home_visibility">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="backtitle">
+        <attr name="title_name" format="string" />
+        <attr name="title_msg" format="string" />
+        <attr name="title_right" format="string" />
+        <attr name="title_isboolean" format="boolean" />
+        <attr name="title_Size" format="dimension" />
+        <attr name="title_visibility">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="4" />
+            <enum name="gone" value="8" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="widgetbottun">
+        <attr name="w_name" format="string" />
+        <attr name="w_src" format="reference|color" />
+        <attr name="w_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="w_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage">
+        <attr name="w1_name" format="string" />
+        <attr name="w1_msg" format="string" />
+        <attr name="w1_src" format="reference|color" />
+        <attr name="w1_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="w1_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage4">
+        <attr name="w2_name" format="string" />
+        <attr name="w2_msg" format="string" />
+        <attr name="w2_src" format="reference|color" />
+        <attr name="w2_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="w2_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="wudgetimage4">
+        <attr name="w3_name" format="string" />
+        <attr name="w3_msg" format="string" />
+        <attr name="w3_src" format="reference|color" />
+        <attr name="w3_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="w3_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage5">
+        <attr name="w5_name" format="string" />
+        <attr name="w5_msg" format="string" />
+        <attr name="w5_src1" format="reference|color" />
+        <attr name="w5_src2" format="reference|color" />
+        <attr name="w5_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="w5_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage7">
+        <attr name="w7_name" format="string" />
+        <attr name="w7_msg1" format="string" />
+        <attr name="w7_msg2" format="string" />
+        <attr name="w7_src1" format="reference|color" />
+        <attr name="w7_src2" format="reference|color" />
+        <attr name="w7_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="w7_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage8">
+        <attr name="w8_name" format="string" />
+        <attr name="w8_msg1" format="string" />
+        <attr name="w8_msg2" format="string" />
+        <attr name="w8_src1" format="reference|color" />
+        <attr name="w8_src2" format="reference|color" />
+        <attr name="w8_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="w8_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage10">
+        <attr name="w10_name" format="string" />
+        <attr name="w10_msg1" format="string" />
+        <attr name="w10_msg2" format="string" />
+        <attr name="w10_msg3" format="string" />
+        <attr name="w10_src1" format="reference|color" />
+        <attr name="w10_src2" format="reference|color" />
+        <attr name="w10_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+
+        <attr name="w10_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage11">
+        <attr name="w11_name" format="string" />
+        <attr name="w11_msg1" format="string" />
+        <attr name="w11_msg2" format="string" />
+        <attr name="w11_msg3" format="string" />
+        <attr name="w11_src1" format="reference|color" />
+        <attr name="w11_src2" format="reference|color" />
+        <attr name="w11_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="w11_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage12">
+        <attr name="w12_name" format="string" />
+        <attr name="w12_msg1" format="string" />
+        <attr name="w12_msg2" format="string" />
+        <attr name="w12_msg3" format="string" />
+        <attr name="w12_src1" format="reference|color" />
+        <attr name="w12_src2" format="reference|color" />
+        <attr name="w12_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="w12_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage15">
+        <attr name="w15_name" format="string" />
+        <attr name="w15_src1" format="reference|color" />
+        <attr name="w15_src2" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage16">
+        <attr name="w16_name" format="string" />
+        <attr name="w16_visibility">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="8" />
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="widgetimage18">
+        <attr name="w18_name" format="string" />
+        <attr name="w18_src" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="RatingStar">
+        <attr name="starNormal" format="reference"/>
+        <attr name="starFocus" format="reference"/>
+        <attr name="starNumber" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage20">
+        <attr name="w20_name" format="string" />
+        <attr name="w20_msg1" format="string" />
+        <attr name="w20_msg2" format="string" />
+    </declare-styleable>
+</resources>

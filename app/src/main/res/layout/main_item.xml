@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp10"
+        android:paddingBottom="@dimen/dp10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.cheergotech.widget.home
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:home_name="首页"
+            app:home_src="@mipmap/homea_2" />
+
+        <com.cheergotech.widget.home
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:home_name="消息"
+            app:home_src="@mipmap/homeb_2" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp80"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/homec_2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right|top"
+                android:background="@drawable/it2"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp2"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp2"
+                android:text="99+"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <com.cheergotech.widget.home
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:home_name="通信录"
+            app:home_src="@mipmap/homed_2" />
+
+        <com.cheergotech.widget.home
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp50"
+            android:layout_weight="1"
+            app:home_name="我的"
+            app:home_src="@mipmap/homee_2" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingTop="@dimen/dp5"
+    android:paddingRight="@dimen/dp10"
+    android:paddingBottom="@dimen/dp5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/e2item24"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dp16"
+        android:paddingTop="@dimen/dp10"
+        android:paddingRight="@dimen/dp16"
+        android:paddingBottom="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:src="@mipmap/avasss" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/sp12"
+                android:text="-"
+                android:textColor="#ff202020"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/sp12"
+                android:text=""
+                android:textColor="#ff929dbb"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/datetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:text="2022/04/02  16:00:22 发布"
+                android:textColor="#ff929dbb"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/root"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/fa3" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:text=""
+            android:textColor="#ff202020"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imgbg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/qq1"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <com.cheergotech.widget.widgetimage5
+                android:id="@+id/widgetimage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:w5_msg="19人觉得很赞"
+                app:w5_src1="@mipmap/fa1"
+                app:w5_src2="@mipmap/fa2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <com.cheergotech.widget.widgetimage5
+                android:id="@+id/widgetimage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:w5_msg="6条评论"
+                app:w5_src1="@mipmap/fa5"
+                app:w5_src2="@mipmap/fa2" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

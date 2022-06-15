@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F6F6"
+    android:fitsSystemWindows="true"
+    tools:context=".UI.activity.viecode.activity_feedbabck">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="@string/fee1" />
+
+    <TextView
+        android:id="@+id/postok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backtitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:drawableTop="@mipmap/postok"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center"
+        android:text="@string/toast7"
+        android:textColor="@color/shapa"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/s32"
+        android:text="@string/feel14"
+        android:textColor="#666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/send_post"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/s32"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/s32"
+        android:layout_marginBottom="@dimen/s32"
+        android:background="@drawable/it325dp"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="返回"
+        android:textColor="#ffffffff"
+        android:textSize="17sp" />
+
+</RelativeLayout>

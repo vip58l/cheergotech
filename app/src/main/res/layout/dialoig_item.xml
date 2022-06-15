@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/dp10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ss0"
+            style="@style/ss1"
+            android:layout_marginBottom="0.3dp"
+            android:background="@drawable/e7"
+            android:text="编辑x的考勤为："
+            android:textColor="#ff202020"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/ss1"
+            style="@style/ss1"
+            android:layout_marginBottom="0.3dp"
+            android:background="@color/white"
+            android:text="在校" />
+
+        <TextView
+            android:id="@+id/ss2"
+            style="@style/ss1"
+            android:layout_marginBottom="0.3dp"
+            android:background="@color/white"
+            android:text="请假" />
+
+        <TextView
+
+            android:id="@+id/ss3"
+            style="@style/ss1"
+            android:layout_marginBottom="0.3dp"
+            android:background="@drawable/e6"
+            android:text="确认缺勤" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ss4"
+        style="@style/ss1"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/e5"
+        android:padding="@dimen/dp10"
+        android:text="取消" />
+
+</LinearLayout>

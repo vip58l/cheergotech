@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".UI.activity.Student.activity_student">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="学生健康" />
+
+    <LinearLayout
+        android:id="@+id/lein1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backtitle"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/s15"
+        android:paddingTop="@dimen/s5"
+        android:paddingRight="@dimen/s15">
+
+        <com.cheergotech.widget.widgetimage16
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp30"
+            app:w16_name="全部"
+            app:w16_visibility="visible" />
+
+        <com.cheergotech.widget.widgetimage16
+            android:id="@+id/t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp30"
+
+            app:w16_name="异常"
+            app:w16_visibility="gone" />
+
+        <com.cheergotech.widget.widgetimage16
+            android:id="@+id/t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp30"
+            app:w16_name="未采集"
+            app:w16_visibility="gone" />
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/F8FAFF" />
+
+
+</LinearLayout>

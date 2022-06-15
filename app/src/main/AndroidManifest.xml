@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cheergotech">
+    <!-- 允许访问网络，必选权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许获取粗略位置，若用GPS实现定位小蓝点功能则必选 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 允许获取设备和运营商信息，用于问题排查和网络定位，若无gps但仍需实现定位小蓝点功能则此权限必选 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许获取网络状态，用于网络定位，若无gps但仍需实现定位小蓝点功能则此权限必选 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许获取wifi网络信息，用于网络定位，若无gps但仍需实现定位小蓝点功能则此权限必选 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许获取wifi状态改变，用于网络定位，若无gps但仍需实现定位小蓝点功能则此权限必选 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 允许写入扩展存储，用于数据缓存，若无此权限则写到私有目录 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许写设备缓存，用于问题排查 -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" /> <!-- 允许读设备等信息，用于问题排查 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 打电话权限申请 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 允许获取精确位置，实时导航为必选 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 后台获取位置信息，若需后台定位或持续导航则必选 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> <!-- 用于申请调用A-GPS模块,卫星定位加速 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 用于用户链接蓝牙时，在导航组件页面的蓝牙连接提醒，建立链接后开发者可选用蓝牙通道进行tts播报 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- 用与导航状态中保持屏幕常亮 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- Android录音需要声明录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission
+        android:name="android.hardware.camera"
+        android:required="true" /> <!-- 摇一摇和手机震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--    未知应用安装-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission
+        android:name="android.permission.INSTALL_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+
+
+    <application
+        android:name="com.cheergotech.Base.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:preserveLegacyExternalStorage="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".UI.activity.viecode.activity_feedbabck"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.activity_Test"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.leave.activity_Leave_approval"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.viecode.activity_viecode"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.Term.activity_termo"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.Term.activity_Term"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.Course.activity_timetable"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.Course.activity_course"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.baijichu.activity_message"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.baijichu.activity_ress"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.baijichu.activity_bjchu"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.buslocation.activity_bus_location"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.Student.activity_temper"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.Student.activity_notcollected"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.Student.activity_temperature"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.Student.activity_student"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.toschool.activity_toschool"
+            android:exported="false" />
+        <activity
+            android:name=".UI.activity.leave.activity_absentees"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.Login.activity_login"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.Login.activity_register"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.leave.activity_Leave"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.welcome.activity_Wellcome"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UI.activity.leave.activity_number"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.buslocation.activity_all_bus_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.baijichu.activity_mylist_bjchu"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.baijichu.activity_bjchu_per"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.Today.activity_today"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.Today.activity_pingyu"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.Today.activity_manage"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.joblist.activity_Joblist"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.joblist.activity_jobrelease"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.joblist.activity_josbper"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.joblist.acetivity_back"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.joblist.activity_alljob"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.joblist.activity_job_correct"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.main.MainActivity1"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.amap.api.navi.AmapRouteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|navigation"
+            android:theme="@android:style/Theme.NoTitleBar" /> <!-- 高德Service组件如果您的项目中使用了高德定位sdk -->
+        <service android:name="com.amap.api.location.APSService" /> <!-- 设置高德Key -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="b86a34e719d22722c95cc6f057533525" /> <!-- 基础功能 -->
+        <activity
+            android:name=".UI.activity.main.MainActivity2"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.leave.activity_location"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.leave.activity_Leave2"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.baijichu.activity_mybjchu"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.Web.DyWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.Today.activity_pingyuper"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.Term.activity_termoper"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.viecode.activity_feedback"
+            android:exported="false" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".UI.activity.viecode.activity_picbage"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.joblist.Record2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.joblist.activity_job_correct2"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

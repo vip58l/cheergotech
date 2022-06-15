@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F8FAFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".UI.activity.leave.activity_Leave">
+
+    <com.cheergotech.widget.Backtitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@color/white"
+        app:title_name="请假申请" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp16">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/headImg"
+                    android:layout_width="@dimen/s43"
+                    android:layout_height="@dimen/s43"
+                    android:src="@mipmap/avasss" />
+
+                <TextView
+                    android:id="@+id/studentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s12"
+                    android:text="name"
+                    android:textColor="#ff202020"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"></View>
+
+                <TextView
+                    android:id="@+id/className"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="#ff929dbb"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp10">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#ECECEC" />
+
+                <com.cheergotech.widget.widgetimage4
+                    android:id="@+id/titles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:w2_msg="事假"
+                    app:w2_name="请假类型：" />
+
+                <com.cheergotech.widget.widgetimage4
+                    android:id="@+id/startTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:w2_msg="2022-03-31 08:00"
+                    app:w2_name="开始时间：" />
+
+                <com.cheergotech.widget.widgetimage4
+                    android:id="@+id/overTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:w2_msg="2022-04-01 08:00"
+                    app:w2_name="结束时间：" />
+
+                <com.cheergotech.widget.widgetimage4
+                    android:id="@+id/days"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:w2_msg="1天"
+                    app:w2_name="请假天数：" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#ECECEC" />
+
+                <com.cheergotech.widget.widgetimage4
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:w2_msg=""
+                    app:w2_name="请假事由：" />
+
+                <TextView
+                    android:id="@+id/describes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginTop="@dimen/s12"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:text="-"
+                    android:textColor="#ff929dbb"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imgageliinear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                android:visibility="gone">
+
+                <com.cheergotech.widget.widgetimage4
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:w2_msg=""
+                    app:w2_name="附件图片" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <com.cheergotech.widget.widgetimage4
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    app:w2_msg=""
+                    app:w2_name="审批意见" />
+
+                <TextView
+                    android:id="@+id/statusname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp10"
+                    android:text="驳回"
+                    android:textColor="#929DBB"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/booter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/status1"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/items"
+                        android:gravity="center"
+                        android:padding="@dimen/dp10"
+                        android:text="通过申请"
+                        android:textColor="#ff202020"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="1dp" />
+
+                    <TextView
+                        android:id="@+id/status2"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/items"
+                        android:gravity="center"
+                        android:padding="@dimen/dp10"
+                        android:text="驳回申请"
+                        android:textColor="#ff202020"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <com.cheergotech.widget.widgetimage4
+                    android:id="@+id/accelerate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    app:w2_msg=""
+                    app:w2_name="驳回原因" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp10"
+                    android:textColor="#929DBB" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

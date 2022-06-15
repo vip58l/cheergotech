@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-files-path
+        name="sharedata"
+        path="shareData" />
+    <root-path
+        name="root"
+        path="." />
+    <files-path
+        name="files"
+        path="." />
+    <cache-path
+        name="cache"
+        path="." />
+    <external-path
+        name="external"
+        path="." />
+    <external-files-path
+        name="name"
+        path="path/" />
+    <external-cache-path
+        name="filename"
+        path="path/" />
+    <external-files-path
+        name="download"
+        path="Download/" />
+    <external-path
+        name="external_files"
+        path="." />
+    <files-path
+        name="root"
+        path="." />
+    <files-path
+        name="my_images"
+        path="images/" />
+    <files-path
+        name="my_audios"
+        path="audios/" />
+    <external-files-path
+        name="my_images"
+        path="Android/data/${applicationId}/files/Pictures" />
+    <external-path
+        name="files_root"
+        path="Android/data/${applicationId}/" />
+    <external-path
+        name="external_storage_root"
+        path="." />
+    <external-files-path
+        name="public-files-path"
+        path="." />
+    <cache-path
+        name="private-cache-path"
+        path="." />
+</paths>

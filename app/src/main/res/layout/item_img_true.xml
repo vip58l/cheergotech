@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dp30"
+            android:gravity="center"
+            android:text="综合评级"
+            android:textColor="#ff0077ff"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp30"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <com.cheergotech.widget.widgetimage11
+                android:id="@+id/w1"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="wrap_content"
+                app:w11_src1="@mipmap/d1"
+                app:w11_src2="@mipmap/d2" />
+
+            <com.cheergotech.widget.widgetimage11
+                android:id="@+id/w2"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="wrap_content"
+                app:w11_src1="@mipmap/d1"
+                app:w11_src2="@mipmap/d2" />
+
+            <com.cheergotech.widget.widgetimage11
+                android:id="@+id/w3"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="wrap_content"
+                app:w11_src1="@mipmap/d1"
+                app:w11_src2="@mipmap/d2" />
+
+            <com.cheergotech.widget.widgetimage11
+                android:id="@+id/w4"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="wrap_content"
+                app:w11_src1="@mipmap/d1"
+                app:w11_src2="@mipmap/d2" />
+
+            <com.cheergotech.widget.widgetimage11
+                android:id="@+id/w5"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="wrap_content"
+                app:w11_src1="@mipmap/d1"
+                app:w11_src2="@mipmap/d2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="“合格”"
+            android:textColor="#ff0077ff"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/dp10"
+    android:paddingRight="@dimen/dp10"
+    android:paddingTop="@dimen/s15"
+    android:paddingBottom="@dimen/s15">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dp10"
+            android:button="@drawable/login_checkbox2"
+            android:checked="false"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/istrue"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_centerInParent="true"
+            android:background="@drawable/itemsf" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp16"
+        android:text="张依秋"
+        android:textColor="#ff000000"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/itemdrbac"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingTop="@dimen/dp2"
+        android:paddingRight="@dimen/dp10"
+        android:paddingBottom="@dimen/dp2"
+        android:text="已评"
+        android:textColor="#ffffffff"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imgage"
+        android:layout_width="@dimen/s20"
+        android:layout_height="@dimen/s20"
+        android:layout_gravity="center"
+        android:src="@mipmap/rightback" />
+
+</LinearLayout>

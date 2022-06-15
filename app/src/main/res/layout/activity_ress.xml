@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F8FAFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".UI.activity.baijichu.activity_ress">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="发帖" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/send1"
+        android:layout_below="@+id/backtitle"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10">
+
+        <com.cheergotech.widget.widgetimage7
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:w7_msg1=""
+            app:w7_msg2="30 /200"
+            app:w7_name="帖子内容" />
+
+        <EditText
+            android:id="@+id/easeInOut"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s150"
+            android:background="@drawable/e12dp"
+            android:gravity="left|top"
+            android:hint="请输入内容"
+            android:maxLines="10"
+            android:minLines="5"
+
+            android:padding="@dimen/dp10"
+            android:textSize="@dimen/sp12" />
+
+        <com.cheergotech.widget.widgetimage7
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp40"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            app:w7_msg1="最多上传3个附件，支持图片"
+            app:w7_msg2=""
+            app:w7_name="上传附件" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/e11"
+            android:padding="@dimen/dp1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/send1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/s32"
+        android:layout_marginRight="@dimen/s32"
+        android:layout_marginBottom="@dimen/dp20"
+        android:background="@drawable/it325dp"
+        android:gravity="center"
+        android:text="发帖"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</RelativeLayout>

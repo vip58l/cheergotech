@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp40"
+        android:paddingLeft="@dimen/dp26"
+        android:paddingRight="@dimen/dp26">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp1"
+            android:layout_weight="1"></View>
+
+        <ImageView
+            android:layout_width="@dimen/dp25"
+            android:layout_height="@dimen/dp25"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/dp4"
+            android:gravity="center"
+            android:src="@mipmap/cerlb"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="创建群聊"
+            android:textColor="#ff000000"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp26"
+        android:paddingRight="@dimen/dp26"
+        android:paddingBottom="@dimen/dp10">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:background="@drawable/e1"
+            android:drawableLeft="@mipmap/b1"
+            android:gravity="center|left"
+            android:hint="查找联系人"
+            android:padding="@dimen/dp10"
+            android:paddingTop="@dimen/dp5"
+            android:paddingBottom="@dimen/s5"
+            android:textSize="13sp"></EditText>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/F8FAFF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:paddingLeft="@dimen/dp26"
+            android:paddingTop="@dimen/dp5"
+            android:paddingRight="@dimen/dp26"
+            android:paddingBottom="@dimen/dp5">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/a1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:gravity="center"
+                    android:text="教育局"
+                    android:textColor="#ff202020"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:text="省人民政府关于推动现代职业教育高质..."
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="32dp"
+                    android:layout_height="14dp"
+                    android:text="14:50"
+                    android:textColor="#ff929dbb"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/it2"
+                    android:paddingLeft="@dimen/s5"
+                    android:paddingTop="@dimen/s2"
+                    android:paddingRight="@dimen/s5"
+                    android:paddingBottom="@dimen/s2"
+                    android:text="99+"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp80"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="#ECECEC" />
+
+        <LinearLayout style="@style/list">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/a2" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="学校办公室"
+                    android:textColor="#ff202020"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="[图片]"
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="昨天 14:50"
+                    android:textColor="#ff929dbb"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/it2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/s5"
+                    android:paddingTop="@dimen/s2"
+                    android:paddingRight="@dimen/s5"
+                    android:paddingBottom="@dimen/s2"
+                    android:text="99+"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp80"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="#ECECEC" />
+
+        <LinearLayout style="@style/list">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/a3" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="部门通知"
+                    android:textColor="#ff202020"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="[视频]"
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期三"
+                    android:textColor="#ff929dbb"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/it2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/s5"
+                    android:paddingTop="@dimen/s2"
+                    android:paddingRight="@dimen/s5"
+                    android:paddingBottom="@dimen/s2"
+                    android:text="99+"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp80"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="#ECECEC" />
+
+        <LinearLayout style="@style/list">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/a4" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="年级通知"
+                    android:textColor="#ff202020"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="省人民政府关于推动现代职业教育高质..."
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="星期一"
+                    android:textColor="#ff929dbb"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/it2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/s5"
+                    android:paddingTop="@dimen/s2"
+                    android:paddingRight="@dimen/s5"
+                    android:paddingBottom="@dimen/s2"
+                    android:text="99+"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/dp80"
+            android:layout_marginTop="@dimen/dp5"
+            android:background="#ECECEC" />
+
+        <LinearLayout style="@style/list">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp10"
+                android:src="@mipmap/a5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:text="工作通知"
+                    android:textColor="#ff202020"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="[考勤打卡：06:59 上班打卡成功]"
+                    android:textColor="#ffc2c2c2"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4月19日"
+                    android:textColor="#ff929dbb"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/it2"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/s5"
+                    android:paddingTop="@dimen/s2"
+                    android:paddingRight="@dimen/s5"
+                    android:paddingBottom="@dimen/s2"
+                    android:text="99+"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

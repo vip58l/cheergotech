@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F8FAFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".UI.activity.baijichu.activity_bjchu">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="班级圈" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backtitle">
+
+        <include layout="@layout/smarxml"></include>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/eroot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:drawableTop="@mipmap/eorr"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:textColor="@color/dbb"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/boot"
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10">
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fa4" />
+
+        <TextView
+            android:id="@+id/rounded"
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:background="@drawable/tips"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#ffffffff"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lineboot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/boot"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp10"
+        android:background="@drawable/a110136dp"
+        android:orientation="vertical"
+        android:padding="@dimen/s15"
+        android:visibility="gone">
+
+        <com.cheergotech.widget.widgetimage18
+            android:id="@+id/Post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            app:w18_name="发贴"
+            app:w18_src="@mipmap/aa4" />
+
+        <com.cheergotech.widget.widgetimage18
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            app:w18_name="消息"
+            app:w18_src="@mipmap/aa3" />
+
+        <com.cheergotech.widget.widgetimage18
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            app:w18_name="我的"
+            app:w18_src="@mipmap/aa1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

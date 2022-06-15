@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F8FAFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".UI.activity.Course.activity_course">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="课程信息" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backtitle"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10">
+
+            <com.cheergotech.widget.widgetimage8
+                android:id="@+id/w1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@drawable/e11"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                app:w8_msg1="Mon"
+                app:w8_name="周一" />
+
+            <com.cheergotech.widget.widgetimage8
+                android:id="@+id/w2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@drawable/e11"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                app:w8_msg1="Tue"
+                app:w8_name="周二" />
+
+            <com.cheergotech.widget.widgetimage8
+                android:id="@+id/w3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@drawable/e11"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                app:w8_msg1="Wed"
+                app:w8_name="周三" />
+
+            <com.cheergotech.widget.widgetimage8
+                android:id="@+id/w4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@drawable/e11"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                app:w8_msg1="Thu"
+                app:w8_name="周四" />
+
+            <com.cheergotech.widget.widgetimage8
+                android:id="@+id/w5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@drawable/e11"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                app:w8_msg1="Fri"
+                app:w8_name="周五" />
+
+            <com.cheergotech.widget.widgetimage8
+                android:id="@+id/w6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@drawable/e11"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                app:w8_msg1="Sat"
+                app:w8_name="周六" />
+
+            <com.cheergotech.widget.widgetimage8
+                android:id="@+id/w7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@drawable/e11"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                app:w8_msg1="Sun"
+                app:w8_name="周日" />
+
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginBottom="@dimen/s32"
+        android:background="@drawable/bgsher"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:visibility="gone"
+        android:text="分享并保存"
+        android:textColor="#ff0077ff"
+        android:textSize="17sp" />
+
+</RelativeLayout>

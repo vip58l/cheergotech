@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/F8FAFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".UI.activity.baijichu.activity_bjchu">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="详情" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/barrier"
+        android:layout_below="@+id/backtitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/dp2"
+            android:orientation="vertical">
+
+            <include layout="@layout/item1" />
+
+            <com.cheergotech.widget.widgetimage7
+                android:id="@+id/widgetimage7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                app:w7_msg1=""
+                app:w7_msg2=""
+                app:w7_name="@string/bjchuper2" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/backtitle"
+                android:layout_margin="@dimen/dp10" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/barrier"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/s32"
+        android:layout_marginRight="@dimen/s32"
+        android:layout_marginBottom="@dimen/dp20"
+        android:background="@drawable/it325dp"
+        android:gravity="center"
+        android:text="@string/bjchuper1"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</RelativeLayout>
