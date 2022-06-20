@@ -163,4 +163,15 @@
     <string name="my5">隐私协议</string>
     <string name="public1">隐私协议</string>
     <string name="public0">用户协议</string>
+    <string name="dialog1">个人信息保护指引</string>
+    <string name="dialog3">暂不使用</string>
+    <string name="dialog2">同意并进入</string>
+    <string name="dialog4">欢迎使用"晴果科技"软件及相关服务！本指引将帮助您了解我们如何收集、处理个人信息。\n
+        1.我们可能会申请存储权限，用于下载及缓存相关文件，可能会访问相机及相册，用于发帖时上传图片或视频，可能会申请系统设备权限收集设备信息，日志信息，用于推送和安全风控，您有权拒绝开启，拒绝授权不会影响App提供基本功能服务；\n
+        2.为保障平台安全和运营安全以及推送、综合统计等目的所必须，我们会申请权限收集以下信息，如设备MAC地址、IMEI、已安装的应用列表等，未经您同意，我们不会从第三方获取，共享或提供您的信息； \n
+        3.我们可能会申请位置权限，用于在提供天气服务，地图定位服务等，不会收集精确位置信息；\n
+        "前往查看完整版 </string>
+    <string name="dialog5">如果您同意，请点击下方按钮以接受我们的服务.</string>
+    <string name="tm18">晴果智慧校园用户协议</string>
+    <string name="tm1811">晴果智慧校园隐私权协议</string>
 </resources>

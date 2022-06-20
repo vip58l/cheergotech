@@ -112,7 +112,7 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".UI.activity.welcome.activity_Wellcome"
+            android:name=".UI.activity.welcome.SplashAtvityWelcome"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

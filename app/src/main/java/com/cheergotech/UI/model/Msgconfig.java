@@ -24,6 +24,16 @@ public class Msgconfig {
     private List<childList> childList;   //list保存孩子信息
     private int classId;                 //班级ID
     private String Names;                //班级名称
+    private boolean islogin;             //同意登录
+
+    public boolean isIslogin() {
+        return islogin;
+    }
+
+    public void setIslogin(boolean islogin) {
+        this.islogin = islogin;
+        this.setMsgconfig(this);
+    }
 
     public String getNames() {
         return this.Names;

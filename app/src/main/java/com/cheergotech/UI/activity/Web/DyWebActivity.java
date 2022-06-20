@@ -130,7 +130,7 @@ public class DyWebActivity extends BaseActivity implements View.OnTouchListener 
                     //执行JS代码
                     //view.loadUrl("javascript:function setTop(){document.querySelector('div.appbanner').style.display=\"none\";}setTop();");
 
-                    //加载js隐藏多余协议标题
+                    //这里为了美观本地加载一段js隐藏多余协议副标题 H2
                     view.loadUrl("javascript:setTimeout(function(){document.getElementsByTagName('h2')[0].style.display=\"none\";});");
 
                 }

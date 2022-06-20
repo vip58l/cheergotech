@@ -110,7 +110,6 @@ public class page5 extends BaseFragment {
     @OnClick({R.id.line0, R.id.line1, R.id.line2, R.id.line3, R.id.line4, R.id.line5, R.id.exit})
     public void OnClick(View v) {
         switch (v.getId()) {
-
             case R.id.line0:
                 //更新头像
                 DialogMessage13.show(context, new CallBcak() {

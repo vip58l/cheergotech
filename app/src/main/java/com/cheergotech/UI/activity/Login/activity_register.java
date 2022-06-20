@@ -236,11 +236,13 @@ public class activity_register extends BaseActivity {
             boolean abc2 = url.contains("abc2");
 
             if (abc1) {
-                DyWebActivity.starAction(context, CahtAPI.useing);
+                //用户协议
+                DyWebActivity.starAction(context, CahtAPI.useing, getString(R.string.public0));
             }
 
             if (abc2) {
-                DyWebActivity.starAction(context, CahtAPI.toprivate);
+                //隐私协议
+                DyWebActivity.starAction(context, CahtAPI.toprivate, getString(R.string.public1));
             }
 
         }

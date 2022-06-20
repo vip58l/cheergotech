@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/shapa"
-    tools:context=".UI.activity.welcome.activity_Wellcome">
+    tools:context=".UI.activity.welcome.SplashAtvityWelcome">
 
     <ImageView
         android:layout_width="match_parent"
