@@ -25,13 +25,11 @@
     <uses-permission
         android:name="android.hardware.camera"
         android:required="true" /> <!-- 摇一摇和手机震动 -->
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <!--    未知应用安装-->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 未知应用安装 -->
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
     <uses-permission
         android:name="android.permission.INSTALL_PACKAGES"
         tools:ignore="ProtectedPermissions" />
-
 
     <application
         android:name="com.cheergotech.Base.DemoApplication"
@@ -230,6 +228,201 @@
             android:name=".UI.activity.joblist.activity_job_correct2"
             android:exported="false"
             android:grantUriPermissions="true" />
+        <activity
+            android:name=".UI.activity.workbench.activity_workbench"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.folder.activity_folder_main"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.Clockin.activity_clockin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.Clockin.activity_load_position"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.Clockin.activity_attendancerules"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.Clockin.activity_count_Statistics"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.Clockin.activity_xcountkin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_Initiat_approval"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_caht"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_selecclass"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_select_quer"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_shengpi"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_caht_user"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_reimbursement"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_bksq"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_tiaoke"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_caht_select"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_caht_caosheng"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_lease"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_pending"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_qinjia"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_myall"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_myall_bxiao"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_myall_buka"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_myall_select_quer"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_myall_tiaoke"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_myall_chaoshong"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.OAapproval.activity_list_myall_qinjiao"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.activity_outsideschool"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.activity_Newitem"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.activity_chat_list"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.activity_meeting1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.activity_meeting2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.activity_list_select_user"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.activity_myfqdsx"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.acetivity_kuihuiyi"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.acetivity_pingyu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.acetivity_activities"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.activity_mycydsx"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.acetivity_huiyi"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.acetivity_activities2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.acteivity_location"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.acetivity_pingyulist"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.acetivity_mylist_pingyu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.acetivity_my_pingyu"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.activity_completed"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.acetivity_pingyu_success"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UI.activity.workbench.matter.acetivity_pingyu_tovoid"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity android:name=".UI.activity.workbench.matter.acetivity_guihuan_lease" />
+        <activity android:name=".UI.activity.workbench.matter.activity_yqdbsx" />
+        <activity android:name=".UI.activity.workbench.matter.acetivity_guihuan_lease1" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

@@ -37,6 +37,8 @@
     <dimen name="s3">3dp</dimen>
     <dimen name="s120">120dp</dimen>
     <dimen name="s43">43dp</dimen>
+    <dimen name="s70">70dp</dimen>
+    <dimen name="dp15">15dp</dimen>
 
 
 </resources>

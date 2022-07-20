@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".UI.activity.workbench.folder.activity_folder_main">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title_name="文件夹1" />
+
+    <EditText
+        android:id="@+id/select"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@+id/backtitle"
+        android:background="@drawable/items"
+        android:drawableLeft="@mipmap/b1"
+        android:drawablePadding="@dimen/dp10"
+        android:hint="文件搜索"
+        android:padding="@dimen/dp10"
+        android:textSize="@dimen/sp14" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/iv_folder"
+        android:layout_below="@+id/select"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingTop="@dimen/dp5"
+            android:paddingRight="@dimen/dp10"
+            android:paddingBottom="@dimen/dp5">
+
+            <com.cheergotech.widget.widgetimage16
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp30"
+                app:w16_name="全部"
+                app:w16_visibility="visible" />
+
+            <com.cheergotech.widget.widgetimage16
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dp30"
+                app:w16_name="我上传的"
+                app:w16_visibility="gone" />
+
+
+        </LinearLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <com.cheergotech.widget.Folderfober
+        android:id="@+id/iv_folder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        app:f_name1="选择文件"
+        app:f_textColor1="@color/colorAccent"
+        app:f_textColor2="@color/wred"
+        app:f_name2="上传文件" />
+
+</RelativeLayout>

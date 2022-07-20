@@ -87,6 +87,7 @@ public class page5 extends BaseFragment {
 
     @Override
     public void iniview() {
+
         clear.setText(DataCleanManager.getTotalCacheSize());
         phone.setText(userinfo.getPhone());
         school.setText(userinfo.getSchoolName());
@@ -107,9 +108,13 @@ public class page5 extends BaseFragment {
     }
 
     @Override
-    @OnClick({R.id.line0, R.id.line1, R.id.line2, R.id.line3, R.id.line4, R.id.line5, R.id.exit})
+    @OnClick({R.id.avatar, R.id.line0, R.id.line1, R.id.line2, R.id.line3, R.id.line4, R.id.line5, R.id.exit})
     public void OnClick(View v) {
         switch (v.getId()) {
+            case R.id.avatar:
+                //工作台
+                //activity_workbench.setAction(activity);
+                break;
             case R.id.line0:
                 //更新头像
                 DialogMessage13.show(context, new CallBcak() {

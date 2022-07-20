@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/s15"
+    android:paddingTop="@dimen/dp10"
+    android:paddingRight="@dimen/s15">
+
+    <RelativeLayout
+        android:layout_width="46dp"
+        android:layout_height="46dp">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:button="@drawable/login_checkbox2"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@mipmap/doc" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp5"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="十堰市实验中学ppt.pptx"
+            android:textColor="#ff000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="校长 上传于 2022/6/16  17:29"
+            android:textColor="#ffb0bde1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="#f1f1f1"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

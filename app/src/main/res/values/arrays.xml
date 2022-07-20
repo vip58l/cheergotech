@@ -21,4 +21,52 @@
         <item>“优秀“</item>
         <item>“上佳“</item>
     </string-array>
+
+    <string-array name="table4">
+        <item>校园规章制度</item>
+        <item>校园公用文件</item>
+        <item>文件夹1</item>
+        <item>文件夹2</item>
+    </string-array>
+    <string-array name="table5">
+        <item>平均工时</item>
+        <item>出勤天数</item>
+        <item>出勤班次</item>
+        <item>休息天数</item>
+        <item>迟到</item>
+        <item>早退</item>
+        <item>缺卡</item>
+        <item>旷工</item>
+        <item>外勤</item>
+        <item>加班</item>
+        <item>补卡申请</item>
+    </string-array>
+
+    <string-array name="table6">
+        <item>请假</item>
+        <item>补卡</item>
+        <item>调课</item>
+        <item>报销</item>
+        <item>租借</item>
+    </string-array>
+    <string-array name="table7">
+        <item>发起事假、病假、婚假、产假等事项的申请</item>
+        <item>发起考勤记录为异常的补卡申请</item>
+        <item>与同事间的课程临时调换申请</item>
+        <item>工作产生的费用上报</item>
+        <item>学习教材、设备租借申请</item>
+    </string-array>
+
+    <string-array name="table8">
+        <item>会议</item>
+        <item>评优</item>
+        <item>校外活动</item>
+    </string-array>
+    <string-array name="table9">
+        <item>召集人员参与主题会议</item>
+        <item>发起评选事项</item>
+        <item>发起校外活动事项</item>
+    </string-array>
+
+
 </resources>

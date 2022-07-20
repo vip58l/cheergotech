@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".UI.activity.workbench.Clockin.activity_load_position">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title_name="考勤打卡" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backtitle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/e12dp"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:text="我的位置"
+            android:textColor="#ff929dbb"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:drawableLeft="@mipmap/location"
+            android:drawablePadding="@dimen/dp5"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="朝鲜民主共和国平壤金日成路24号"
+            android:textColor="#ff000000"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f1f1f1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp80"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp10"
+                android:text="* 拍照"
+                android:textColor="#ff929dbb"
+                android:textSize="13sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:src="@mipmap/camera1" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f1f1f1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp5"
+            android:text="* 说明"
+            android:textColor="#ff929dbb"
+            android:textSize="13sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp10"
+            android:background="@null"
+            android:hint="填写外勤说明"
+            android:maxLength="5"
+            android:maxLines="100"
+            android:padding="@dimen/dp10"
+            android:textColor="#666"
+            android:textColorHint="#ffd9dde6"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/send1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp10"
+            android:background="@drawable/loadposition25"
+            android:gravity="center"
+            android:padding="@dimen/s15"
+            android:text="06:58:22 外勤打卡"
+            android:textColor="#ffffffff"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:fitsSystemWindows="true"
+    tools:context=".UI.activity.workbench.Clockin.activity_count_Statistics">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title_name="统计" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backtitle"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_4dp"
+            android:orientation="horizontal">
+            <!--android:background="@drawable/itemleft"-->
+            <!--android:textColor="@color/white"-->
+            <TextView
+                android:id="@+id/tt1"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:text="周" />
+
+            <TextView
+                android:id="@+id/tt2"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/itemrig"
+                android:gravity="center"
+                android:padding="@dimen/dp5"
+                android:text="月"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp20"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:id="@+id/tv123"
+                android:layout_width="@dimen/dp80"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/dp10"
+                android:gravity="center"
+                android:text="2022.4" />
+
+            <ImageView
+                android:id="@+id/right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="180"
+                android:src="@mipmap/back" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout12"
+        android:layout_below="@+id/linearLayout13">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:padding="@dimen/dp10">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/s43"
+                    android:layout_height="@dimen/s43"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:src="@mipmap/icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="赵美延"
+                        android:textColor="#ff000000"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/query"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:text="考勤组：十堰市人民小学(查看规则)"
+                        android:textColor="#ff0077ff"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="@dimen/dp10"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp10"
+            android:drawableLeft="@mipmap/count1"
+            android:gravity="center"
+
+            android:text="打卡"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp50"
+            android:drawableLeft="@mipmap/count2"
+            android:gravity="center"
+            android:text="统计"
+            android:textColor="#ff0077ff"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

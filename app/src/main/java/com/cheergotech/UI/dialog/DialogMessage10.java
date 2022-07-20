@@ -44,7 +44,6 @@ public class DialogMessage10 extends BaseDialog {
         return dialogMessage;
     }
 
-
     public DialogMessage10(@NonNull Context context, CallBcak callBcak) {
         super(context);
         this.callBcak = callBcak;

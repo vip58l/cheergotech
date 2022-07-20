@@ -28,5 +28,7 @@
     <color name="color_black">#000000</color>
     <color name="color_white">#ffffff</color>
     <color name="color_white999">#f1f1f1</color>
+    <color name="color_ffb0bde1">#ffb0bde1</color>
+    <color name="color_ff202020">#ff202020</color>
 
 </resources>

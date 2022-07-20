@@ -41,6 +41,7 @@
             android:padding="@dimen/dp10"
             app:w7_msg1=""
             app:w7_msg2=""
+            android:visibility="gone"
             app:w7_name="评语标题" />
 
         <EditText
@@ -52,6 +53,7 @@
             android:gravity="left|top"
             android:maxLines="5"
             android:minLines="3"
+            android:visibility="gone"
             android:padding="@dimen/dp10" />
 
         <com.cheergotech.widget.widgetimage7
@@ -61,7 +63,7 @@
             android:padding="@dimen/dp10"
             app:w7_msg1=""
             app:w7_msg2=""
-            app:w7_name="今日评价" />
+            app:w7_name="今日表现" />
 
         <LinearLayout
             android:layout_width="300dp"

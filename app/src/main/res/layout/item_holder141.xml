@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp10"
+    android:background="@drawable/e11"
+    android:orientation="vertical"
+    android:padding="@dimen/dp10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp40"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="赵美延的租借申请"
+            android:textColor="#ff202020"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/iteme4_2"
+            android:gravity="center"
+            android:padding="@dimen/dp5"
+            android:text="进行中"
+            android:textColor="#FF9100"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/datetime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp5"
+        android:text="2022-04-16 07:20"
+        android:textColor="#ff929dbb"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="租借品类：校园场地"
+        android:textColor="#ff000000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/datetime2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="归还时间：2022-05-07 00:00"
+        android:textColor="#ff000000"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/datetime3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="归还时间：2022-05-07 00:00"
+        android:textColor="#ff000000"
+        android:textSize="13sp"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".UI.activity.workbench.activity_workbench">
+    
+    <com.cheergotech.widget.Backtitle
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:title_name="工作台" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.cheergotech.widget.widgetimage3
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                app:w31_name="考勤打卡"
+                app:w31_visibility1="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/e11"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/datetime" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s2"
+                        android:text="考勤时间 07:00 ~ 12:00 13:00 ~ 18:00"
+                        android:textColor="#ff929dbb"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:orientation="horizontal">
+
+                    <com.cheergotech.widget.widgetimage21
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp2"
+                        android:layout_weight="1"
+                        app:w21_name1="上午"
+                        app:w21_name2="07:00"
+                        app:w21_name3="06:55已打卡" />
+
+                    <com.cheergotech.widget.widgetimage21
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp2"
+                        android:layout_weight="1"
+                        app:w21_name1="下午"
+                        app:w21_name2="01:30"
+                        app:w21_name3="未打卡" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:alpha="0.2"
+                    android:background="#999"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/clockin"
+                    android:layout_width="@dimen/dp100"
+                    android:layout_height="@dimen/dp40"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@drawable/it325dp"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:text="去打卡"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <com.cheergotech.widget.widgetimage3
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:w1_src="@mipmap/fa3"
+                app:w31_name="OA审批" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/e11"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <com.cheergotech.widget.widgetimage2
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:w211_name="待处理"
+                    app:w211_src="@mipmap/f1" />
+
+                <com.cheergotech.widget.widgetimage2
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:w211_name="已处理"
+                    app:w211_src="@mipmap/f2" />
+
+                <com.cheergotech.widget.widgetimage2
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:w211_name="我发起的"
+                    app:w211_src="@mipmap/f3" />
+
+                <com.cheergotech.widget.widgetimage2
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:w211_name="抄送我的"
+                    app:w211_src="@mipmap/f4" />
+            </LinearLayout>
+
+            <com.cheergotech.widget.widgetimage3
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:w31_name="待办事项" />
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/e11"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <com.cheergotech.widget.widgetbottun
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:w_name="进行中"
+                    app:w_src="@mipmap/d11" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:alpha="0.2"
+                    android:background="#999"
+                    android:textSize="16sp" />
+
+                <com.cheergotech.widget.widgetbottun
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:w_name="逾期待办"
+                    app:w_src="@mipmap/d22" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:alpha="0.2"
+                    android:background="#999"
+                    android:textSize="16sp" />
+
+                <com.cheergotech.widget.widgetbottun
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:w_name="已完成"
+                    app:w_src="@mipmap/d3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:alpha="0.2"
+                    android:background="#999"
+                    android:textSize="16sp" />
+
+                <com.cheergotech.widget.widgetbottun
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:w_name="我参与的事项"
+                    app:w_src="@mipmap/d4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:alpha="0.2"
+                    android:background="#999"
+                    android:textSize="16sp" />
+
+                <com.cheergotech.widget.widgetbottun
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:w_name="我发起的事项"
+                    app:w_src="@mipmap/d5" />
+
+            </LinearLayout>
+
+            <com.cheergotech.widget.widgetimage3
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:w31_name="文件夹" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/e11"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+                <!--                <com.cheergotech.widget.widgetimage-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    app:w1_name="校园规章制度" />-->
+
+                <!--                <com.cheergotech.widget.widgetimage-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    app:w1_name="校园公用文件" />-->
+
+                <!--                <com.cheergotech.widget.widgetimage-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    app:w1_name="文件夹1" />-->
+
+                <!--                <com.cheergotech.widget.widgetimage-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    app:w1_name="文件夹2" />-->
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

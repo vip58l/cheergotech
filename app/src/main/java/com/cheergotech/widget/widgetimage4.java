@@ -2,6 +2,7 @@ package com.cheergotech.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
@@ -12,6 +13,9 @@ import androidx.annotation.Nullable;
 import com.cheergotech.Base.BaseFrameLayout;
 import com.cheergotech.R;
 
+/**
+ *
+ */
 public class widgetimage4 extends BaseFrameLayout {
     TextView title;
     TextView msg;
@@ -38,8 +42,15 @@ public class widgetimage4 extends BaseFrameLayout {
         inflate(context, R.layout.widgettext, this);
         title = findViewById(R.id.title);
         msg = findViewById(R.id.msg);
-        title.setText(title_name);
-        msg.setText(title_msg);
+
+        if (!TextUtils.isEmpty(title_name)) {
+            title.setText(title_name);
+        }
+
+        if (!TextUtils.isEmpty(title_msg)) {
+            msg.setText(title_msg);
+        }
+
     }
 
     @Override
@@ -47,7 +58,19 @@ public class widgetimage4 extends BaseFrameLayout {
 
     }
 
+    /**
+     * 设置内容
+     * @param msg
+     */
     public void setMsg(String msg) {
         this.msg.setText(msg);
+    }
+
+    /**
+     * 设置标题
+     * @param t
+     */
+    public void setTitle(String t) {
+        this.title.setText(t);
     }
 }

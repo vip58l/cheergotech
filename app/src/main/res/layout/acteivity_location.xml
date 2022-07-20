@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.cheergotech.widget.Backtitle
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="活动地点" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/e12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="活动地点"
+                android:textColor="#ff929dbb"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:padding="@dimen/dp10"
+                android:text="十堰市北京路体育中心"
+                android:textColor="#ff000000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f1f1f1"
+                android:textColor="#ff929dbb"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                android:text=" 交通说明"
+                android:textColor="#ff929dbb"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingBottom="@dimen/dp10"
+                android:text="7点率班级操场集合统一乘坐校车前往，到达比赛
+场地后，领队联系赛事工作人员，办理入场相关
+手续。"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

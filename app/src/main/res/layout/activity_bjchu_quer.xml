@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="选择审批人" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/send_back"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backtitle"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="行政办公室"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="展开"
+                android:textColor="#ff929dbb"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backtitle"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="党支部"
+                android:textColor="#ff000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="展开"
+                android:textColor="#ff929dbb"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/backtitle"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="党支部"
+                    android:textColor="#ff000000"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="展开"
+                    android:textColor="#ff929dbb"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/send_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center|right"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/it325dp"
+        android:gravity="center"
+        android:padding="@dimen/dp10"
+        android:text="@string/fbpy1"
+        android:textColor="#ffffffff"
+        android:textSize="17sp" />
+
+</RelativeLayout>

@@ -42,6 +42,7 @@ import com.cheergotech.UI.activity.joblist.activity_Joblist;
 import com.cheergotech.UI.activity.leave.activity_Leave_approval;
 import com.cheergotech.UI.activity.leave.activity_absentees;
 import com.cheergotech.UI.activity.toschool.activity_toschool;
+import com.cheergotech.UI.activity.workbench.activity_workbench;
 import com.cheergotech.UI.model.Datamodule;
 import com.cheergotech.UI.model.Msgconfig;
 import com.cheergotech.UI.model.absinit;
@@ -198,7 +199,7 @@ public class page1 extends BaseFragment {
     }
 
     @Override
-    @OnClick({R.id.frame1, R.id.frame2, R.id.frame3, R.id.frame4, R.id.line1, R.id.line2, R.id.line3, R.id.line4, R.id.imgage, R.id.imgagemap, R.id.refresh, R.id.grade, R.id.boot})
+    @OnClick({R.id.frame1, R.id.frame2, R.id.frame3, R.id.frame4, R.id.line1, R.id.line2, R.id.line3, R.id.line4, R.id.imgage, R.id.imgagemap, R.id.refresh, R.id.grade, R.id.boot, R.id.image})
     public void OnClick(View v) {
         if (msgconfig.getClassId() == 0) {
             Toasts.toastMessage(getString(R.string.toast5));
@@ -208,7 +209,6 @@ public class page1 extends BaseFragment {
             Toasts.toastMessage(getString(R.string.toast5));
             return;
         }
-
         switch (v.getId()) {
 
             case R.id.frame1: {
@@ -301,6 +301,13 @@ public class page1 extends BaseFragment {
                 break;
 
             }
+
+            case R.id.image: {
+                //工作台
+                activity_workbench.setAction(activity);
+                break;
+            }
+
 
         }
     }

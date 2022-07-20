@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="租借" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sendbtton"
+        android:layout_below="@+id/backtitle"
+        android:layout_marginBottom="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                app:t23_name1="租借品类"
+                app:t23_name2="校园场地"
+                app:t23_show2="true" />
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                app:t23_name1="物品详细"
+                app:t23_name2="化学实验室A室，为学生演示氧气爆炸的威力"
+                app:t23_show2="true" />
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                app:t23_name1="开始时间"
+                app:t23_name2="2022-05-06 10:00"
+                app:t23_show2="true" />
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp1"
+                app:t23_name1="归还时间"
+                app:t23_name2="2022-05-07 00:00"
+                app:t23_show2="true" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/sendbtton"
+        android:layout_width="310dp"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/itemsent"
+        android:gravity="center"
+        android:text="已超时，请尽快归还"
+        android:textColor="#ffffffff"
+        android:textSize="17sp" />
+
+</RelativeLayout>

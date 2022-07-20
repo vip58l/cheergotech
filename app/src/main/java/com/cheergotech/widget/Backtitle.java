@@ -13,6 +13,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
@@ -31,7 +32,7 @@ import com.cheergotech.listen.CallBcak;
 public class Backtitle extends BaseFrameLayout {
     private static final String TAG = Backtitle.class.getName();
     public RelativeLayout layout0;
-    public ImageView imgback, imgrhig;
+    public ImageView imgback, imgrhig, myonclick;
     public TextView backleft, title, backright;
     public LinearLayout line1;
     private String title_name, title_msg, title_right;
@@ -70,6 +71,7 @@ public class Backtitle extends BaseFrameLayout {
         title_right = a.getString(R.styleable.backtitle_title_right);
         dimension = a.getDimension(R.styleable.backtitle_title_Size, 0);
         titleview = a.getInt(R.styleable.backtitle_title_visibility, 8);
+        Drawable drawable = a.getDrawable(R.styleable.backtitle_title_src);
         a.recycle();
 
         inflate(getContext(), R.layout.item_var_back, this);
@@ -81,17 +83,19 @@ public class Backtitle extends BaseFrameLayout {
         backleft = findViewById(R.id.backleft);
         title = findViewById(R.id.title);
         backright = findViewById(R.id.backright);
-
+        myonclick = findViewById(R.id.myonclick);
         if (!TextUtils.isEmpty(title_name)) {
             title.setText(title_name);
         }
-
         if (!TextUtils.isEmpty(title_right)) {
             backright.setVisibility(VISIBLE);
             backright.setText(title_right);
         }
         if (dimension > 0) {
             title.setTextSize(dimension);
+        }
+        if (drawable != null) {
+            myonclick.setImageDrawable(drawable);
         }
         imgback.setOnClickListener(this::onClick);
         line1.setOnClickListener(this::onClick);
@@ -101,20 +105,23 @@ public class Backtitle extends BaseFrameLayout {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+
             case R.id.img_back: {
                 Context context = getContext();
                 ((Activity) context).finish();
+                break;
             }
 
-            break;
             case R.id.line1: {
+                //切换消息
                 imgrhig.setImageResource(imgtop ? R.mipmap.boot : R.mipmap.top);
                 imgtop = imgtop ? false : true;
                 if (callBcak != null) {
                     callBcak.setOnboolean(imgtop);
                 }
+                break;
             }
-            break;
+
         }
     }
 

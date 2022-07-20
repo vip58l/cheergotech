@@ -79,8 +79,8 @@ android {
 
         debug {
             //调试测试版
-            //buildConfigField 'String', 'CHAT_API', quotWrapper("https://wcharpays.focusea.com/hz")
-            buildConfigField 'String', 'CHAT_API', quotWrapper("http://hbsch.natapp1.cc/api")
+            buildConfigField 'String', 'CHAT_API', quotWrapper("https://wcharpays.focusea.com/hz")
+//            buildConfigField 'String', 'CHAT_API', quotWrapper("http://hbsch.natapp1.cc/api")
 
             //bugly上报
             buildConfigField 'String', 'BUGLY_APPID', quotWrapper("bf581d4b3a")

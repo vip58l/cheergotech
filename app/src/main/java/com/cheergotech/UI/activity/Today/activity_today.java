@@ -47,13 +47,13 @@ public class activity_today extends BaseActivity {
     widgetimage16 t4;
     @BindView(R.id.widgetimage13)
     widgetimage13 widgetimage13;
-    //    0：全部 1：已表扬 2:待改进 3：未评
+    //0：全部 1：已表扬 2:待改进 3：未评
     private page page0;
     private page page1;
     private page page2;
     private page page3;
     private int itemtype;
-    private page page1111 = page0;
+    private page page1111;
 
     public static void setAction(Activity context) {
         Intent intent = new Intent();
@@ -95,6 +95,7 @@ public class activity_today extends BaseActivity {
             fragments.add(page1 = new page(3, t2, t3, t4));
             fragments.add(page2 = new page(1, t2, t3, t4));
             fragments.add(page3 = new page(2, t2, t3, t4));
+            page1111=page0;
         }
         viewPager.setAdapter(new viepagePagerAdapter(getSupportFragmentManager(), fragments, 0));
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
@@ -175,6 +176,9 @@ public class activity_today extends BaseActivity {
     public void OnClick(View v) {
         switch (v.getId()) {
             case R.id.send1:
+                if (page1111 == null) {
+                    return;
+                }
                 List<Object> objects = new ArrayList<>();
                 for (Object o : page1111.list) {
                     studentunrcom studentunrcom = (com.cheergotech.UI.model.studentunrcom) o;

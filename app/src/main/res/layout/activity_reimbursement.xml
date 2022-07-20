@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:fitsSystemWindows="true">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="报销" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonPanel"
+        android:layout_below="@+id/backtitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.cheergotech.widget.widgetimage22
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:w22_boot2="true"
+                app:w22_boot4="true"
+                app:w22_name1="报销总额（元）"
+                app:w22_name2="共1笔" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp10"
+                android:text="费用明细(1)"
+                android:textColor="#ff929dbb"
+                android:textSize="12sp" />
+
+            <com.cheergotech.widget.widgetimage22
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp1"
+                android:background="@color/white"
+                app:w22_boot1="true"
+                app:w22_boot3="true"
+                app:w22_name1="报销金额（元）"
+                app:w22_name2="请输入金额" />
+
+            <com.cheergotech.widget.widgetimage22
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp1"
+                android:background="@color/white"
+                app:w22_name1="费用发生日期"
+                app:w22_name2="请选择" />
+
+            <com.cheergotech.widget.widgetimage22
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp1"
+                android:background="@color/white"
+                app:w22_name1="费用类型"
+                app:w22_name2="请选择" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp1"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp1"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@color/white"
+                        android:paddingLeft="@dimen/dp10"
+                        android:text="附件"
+                        android:textColor="#ff202020"
+                        android:textSize="15sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/update_img" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:alpha="0.5"
+                    android:background="@color/B0BDE1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:gravity="center"
+                    android:padding="@dimen/dp5"
+                    android:text="+添加"
+                    android:textColor="#ff0077ff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <com.cheergotech.widget.widgetimage22
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:w22_boot4="true"
+                app:w22_name1="归属人"
+                app:w22_name2="填写请假事由" />
+
+            <com.cheergotech.widget.widgetimage22
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:w22_boot1="true"
+                app:w22_boot3="true"
+                app:w22_boot4="true"
+                app:w22_name1="备注"
+                app:w22_name2="填写请假事由" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:gravity="center|left"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发送到群"
+                        android:textColor="#ff202020"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#ff202020"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/adds"
+                        android:textColor="#ff202020"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:background="@drawable/iem_upps"
+                        android:padding="@dimen/dp10"
+                        android:text="三年级教师组"
+                        android:textColor="#ff0077ff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/iem_upps"
+                        android:padding="@dimen/dp10"
+                        android:text="三年级(4)班工作组"
+                        android:textColor="#ff0077ff"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_marginBottom="@dimen/dp20"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="流程："
+                    android:textColor="#ff202020"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@mipmap/tt1288" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.cheergotech.widget.widgeiimage32
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            app:tt_name1="审批人"
+                            app:tt_name2="请选择审批人"
+                            app:tt_show="true" />
+
+                        <com.cheergotech.widget.widgeiimage32
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            app:tt_name1="付款确认"
+                            app:tt_name2="请选择审批人" />
+
+                        <com.cheergotech.widget.widgeiimage32
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            app:tt_name1="抄送给"
+                            app:tt_name2="请选择抄送人" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="通过聊天发送给审批人"
+                        android:textColor="#ff929dbb"
+                        android:textSize="15sp" />
+
+                    <Switch
+                        android:id="@+id/scale_scroll_wheel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp20"
+        android:background="@drawable/it325dp"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

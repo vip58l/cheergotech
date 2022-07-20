@@ -42,12 +42,10 @@ public class widgetbottun extends BaseFrameLayout {
         TextView name = findViewById(R.id.name);
         ImageView image = findViewById(R.id.image);
         ImageView backright = findViewById(R.id.backright);
-
         name.setText(title_name);
-        image.setImageDrawable(drawable);
-        image.setVisibility(visibility1);
-        backright.setVisibility(visibility2);
-
+        if (drawable!=null) {
+            image.setImageDrawable(drawable);
+        }
     }
 
     @Override

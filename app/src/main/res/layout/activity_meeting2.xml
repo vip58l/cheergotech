@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="会议" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonPanel"
+        android:layout_below="@+id/backtitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <com.cheergotech.widget.widgetimage22
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:w22_boot3="true"
+                app:w22_boot4="true"
+                app:w22_name1="张萌发起的会议事项"
+                app:w22_name2="三年级教师组" />
+
+            <com.cheergotech.widget.widgetimage22
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:w22_name1="会议类型"
+                app:w22_name2="年级教师会议" />
+
+            <com.cheergotech.widget.widgetimage22
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:w22_name1="会议主题"
+                app:w22_name2="三年级教师组5月份月度工作汇报" />
+
+            <com.cheergotech.widget.widgetimage22
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:w22_name1="会议时间"
+                app:w22_name2="2022-05-06 13:00" />
+
+            <com.cheergotech.widget.widgetimage22
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:w22_name1="参会人员"
+                app:w22_name2="王梦一、刘军、何媛媛、张雅兰、马冬梅、
+查里、亨利、王德发" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="通过聊天发送给参会人员" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp20"
+        android:background="@drawable/it325dp"
+        android:text="发起事项"
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+</RelativeLayout>

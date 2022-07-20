@@ -15,6 +15,7 @@ import com.cheergotech.Base.BaseFrameLayout;
 import com.cheergotech.R;
 
 public class widgetimage extends BaseFrameLayout {
+
     public widgetimage(@NonNull Context context) {
         super(context);
     }
@@ -40,15 +41,14 @@ public class widgetimage extends BaseFrameLayout {
         ImageView image = findViewById(R.id.img);
         TextView title = findViewById(R.id.title);
         title.setText(title_name);
-        title.setVisibility(visibility2);
-        if (drawable!=null){
+        if (drawable != null) {
             image.setImageDrawable(drawable);
         }
-        image.setVisibility(visibility1);
     }
 
     @Override
     public void onClick(View v) {
 
     }
+
 }

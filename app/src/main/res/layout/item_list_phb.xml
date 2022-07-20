@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:padding="@dimen/dp10">
+
+    <TextView
+        android:id="@+id/unction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginRight="@dimen/dp16"
+        android:text="1."
+        android:textColor="#ffb0bde1"
+        android:textSize="15sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/s43"
+        android:layout_height="@dimen/s43"
+        android:src="@mipmap/icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sp12"
+        android:text="王梦一"
+        android:textColor="#ff202020"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp16"
+        android:text="4 票"
+        android:textColor="#ff0077ff"
+        android:textSize="15sp" />
+</LinearLayout>

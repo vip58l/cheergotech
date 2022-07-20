@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/cheergotech/SelectImage/src/main/res/drawable/itemback.xml" value="0.362" />
         <entry key="..\:/cheergotech/SelectImage/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
         <entry key="..\:/cheergotech/SelectImage/src/main/res/layout/activity_preview_image.xml" value="0.3619791666666667" />
         <entry key="..\:/cheergotech/SelectImage/src/main/res/layout/activity_select_image.xml" value="0.3619791666666667" />
@@ -12,6 +13,8 @@
         <entry key="..\:/cheergotech/app/src/main/res/drawable/a110136dp.xml" value="0.3265" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/addfind.xml" value="0.221" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/bgsher.xml" value="0.221" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/bgstar.xml" value="0.3125" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/dialog_item17.xml" value="0.366" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/dialog_list.xml" value="0.27" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/drawables.xml" value="0.246" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/e1.xml" value="0.221" />
@@ -23,11 +26,15 @@
         <entry key="..\:/cheergotech/app/src/main/res/drawable/e222.xml" value="0.3225" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/e2item24.xml" value="0.3145" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/e3.xml" value="0.221" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/e312.xml" value="0.2695" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/e3121.xml" value="0.2375" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/e3122.xml" value="0.2375" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/e333.xml" value="0.3225" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/e4.xml" value="0.23" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/e5.xml" value="0.246" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/e8.xml" value="0.221" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/e9.xml" value="0.24" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/iem_upps.xml" value="0.2375" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/it325dp.xml" value="0.221" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/ite25dp.xml" value="0.24" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/ite5.xml" value="0.34" />
@@ -40,67 +47,129 @@
         <entry key="..\:/cheergotech/app/src/main/res/drawable/ite7.xml" value="0.34" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/ite9.xml" value="0.27" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/item04.xml" value="0.2735" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/item123.xml" value="0.2445" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/item12dp.xml" value="0.2445" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/item23dp.xml" value="0.2735" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/item24.xml" value="0.2735" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/item4dp.xml" value="0.366" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/item6.xml" value="0.363" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/item_4dp.xml" value="0.2375" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/itemback.xml" value="0.235" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/itemback15dp.xml" value="0.362" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/itemdrbac.xml" value="0.367" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/iteme4.xml" value="0.132" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/iteme4_1.xml" value="0.2045" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/iteme4_2.xml" value="0.2045" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/itemleft.xml" value="0.2375" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/itemred25dp.xml" value="0.362" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/itemred25dp_1.xml" value="0.2045" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/itemrig.xml" value="0.2375" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/items.xml" value="0.3265" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/items25.xml" value="0.2445" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/itemsend25dp.xml" value="0.362" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/itemsent.xml" value="0.2045" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/itemsf.xml" value="0.3225" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/itemw.xml" value="0.3265" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/loadposition25.xml" value="0.366" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/login_checkbox.xml" value="0.27" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/login_checkbox2.xml" value="0.27" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/login_reg.xml" value="0.221" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/managebg.xml" value="0.197" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/momey_bg.xml" value="0.34" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/nonts.xml" value="0.301" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/shape_conner_system_20dp.xml" value="0.261" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/shape_conner_white_line_20dp.xml" value="0.261" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/tips.xml" value="0.3265" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/turnout_progressbar_horizontal.xml" value="0.2615" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_activities.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_guihuan_lease.xml" value="0.22" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_guihuan_lease1.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_huiyi.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_kuihuiyi.xml" value="0.25" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_my_pingyu.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_mylist_pingyu.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_pingyu.xml" value="0.1" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_pingyu_tovoid.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_pingyulist.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acteivity_location.xml" value="0.25" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_absentees.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_acetivity_back.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_alljob.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_attendancerules.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_bjchu.xml" value="0.33" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_bjchu_class.xml" value="0.2997007268063275" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_bjchu_per.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_bjchu_quer.xml" value="0.33" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_bksq.xml" value="0.29628046173578454" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_bus_location.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_chat_list.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_clockin.xml" value="0.33" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_count_statistics.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_course.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_dy.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_feedbabck.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_feedback.xml" value="0.32407407407407407" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_folder_main.xml" value="0.33" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_gdamap.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_gps1.xml" value="0.33" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_initiat_approval.xml" value="0.3651041666666667" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_job_correct.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_job_correct2.xml" value="0.3619791666666667" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_joblist.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_jobrelease.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_josbper.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_lease.xml" value="0.29628046173578454" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_leave.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_leave2.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_leave_approval.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_list_caht.xml" value="0.29674968341072183" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_list_caht_user.xml" value="0.2997007268063275" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_list_myall_buka.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_list_myall_bxiao.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_list_myall_qinjiao.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_list_myall_select_quer.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_list_myall_tiaoke.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_list_pending.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_list_qinjia.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_list_select_user.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_load_position.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_login_reg.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_main2.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_manage.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_meeting.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_meeting2.xml" value="0.29713552800342025" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_messeuss.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_mybjchu.xml" value="0.3651041666666667" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_newitem.xml" value="0.29628046173578454" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_number.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_outsideschool.xml" value="0.29628046173578454" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_pingyu.xml" value="0.3619791666666667" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_pingyuper.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_record2.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_reimbursement.xml" value="0.29628046173578454" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_ress.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_shengpi.xml" value="0.2997007268063275" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_student.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_temper.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_temperature.xml" value="0.5" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_temperature2.xml" value="0.36614583333333334" />
-        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_term.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_term.xml" value="0.25" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_termo.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_termoper.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_test.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_tiaoke.xml" value="0.29628046173578454" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_timetable.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_today.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_toschool.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_viecode.xml" value="0.33" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_viewpages.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/activity_welcome.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_widedgtimages.xml" value="0.3515625" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_workbench.xml" value="0.25" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/activity_xcountkin.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/aumdilayout.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/aumdilayout15.xml" value="0.3651041666666667" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/aumdilayout16.xml" value="0.3651041666666667" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/aumdilayout18.xml" value="0.3651041666666667" />
@@ -120,27 +189,51 @@
         <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_item11.xml" value="0.3515625" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_item12.xml" value="0.3609375" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_item13.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_item16.xml" value="0.33" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_item17.xml" value="0.3651041666666667" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_item18.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_item19.xml" value="0.2997007268063275" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_item2.xml" value="0.3515625" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_item20.xml" value="0.33" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_item21.xml" value="0.29628046173578454" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_item3.xml" value="0.3515625" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/dialoig_load.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/folderfober.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/folderfober_item.xml" value="0.3515625" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/fragment2.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/fragment3.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/fragment4.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/fragment5.xml" value="0.33" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/home_footetr.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item1.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_bootber.xml" value="0.29713552800342025" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_chat_img.xml" value="0.33" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_chat_iv_list.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_chat_left.xml" value="0.25" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_chat_mxl.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_chat_shengpi.xml" value="0.2997007268063275" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_count1.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_count2.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_count3.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_count4.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_dialog_chat.xml" value="0.29628046173578454" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_eorr.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_fragement.xml" value="0.3651041666666667" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_holder129.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_holder130.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_holder141.xml" value="0.22" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_img.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_img18.xml" value="0.3515625" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_img_dbxs.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_img_def.xml" value="0.5" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_img_def2.xml" value="0.33" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_img_true.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_img_true_tip.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_list_count.xml" value="0.33" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_list_phb.xml" value="0.29628046173578454" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_location.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_location2.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/item_myfqdsx.xml" value="0.33" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_navigation.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_text.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_text_avaer.xml" value="0.36614583333333334" />
@@ -152,10 +245,13 @@
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_text_title.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_var_back.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/item_zhuoyei_holder.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/itemlayout.xml" value="0.29713552800342025" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/keave_list.xml" value="0.3651041666666667" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/main_item.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/main_page_job.xml" value="0.3619791666666667" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/main_page_mxl.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/notification1.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/notification_action.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/page1.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/page_fragment.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/pageterm.xml" value="0.36614583333333334" />
@@ -165,8 +261,11 @@
         <entry key="..\:/cheergotech/app/src/main/res/layout/widgetbottun.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/widgetimage.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/widgetimage2.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/widgetimage23.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/widgetimage24.xml" value="0.33" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/widgetimage3.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/widgetimage4.xml" value="0.36614583333333334" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/widgetmage22.xml" value="0.3651041666666667" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/widgettext.xml" value="0.36614583333333334" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/widgettext19.xml" value="0.3619791666666667" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/widgettext20.xml" value="0.3609375" />
@@ -323,5 +422,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.36614583333333334" />
+      </ProjectState>
+    </option>
   </component>
 </project>

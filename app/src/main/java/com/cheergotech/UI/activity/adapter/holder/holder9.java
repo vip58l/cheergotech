@@ -162,4 +162,36 @@ public class holder9 extends BaseHolder {
 
 
     }
+
+    /**
+     * 选择群组
+     *
+     * @param o
+     * @param position
+     * @param callBcak
+     */
+    public void bind4(Object o, int position, CallBcak callBcak) {
+        this.object = o;
+        msg.setVisibility(View.GONE);
+        imgage.setVisibility(View.GONE);
+
+        title.setText("111111");
+        istrue.setVisibility(View.GONE);
+
+        if (position > 5) {
+            checkbox.setChecked(true);
+        } else {
+            checkbox.setChecked(false);
+        }
+
+        checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                checkbox.setChecked(b);
+            }
+        });
+        if (callBcak != null) {
+            itemView.setOnClickListener(v -> callBcak.setOnClickListener(position));
+        }
+    }
 }

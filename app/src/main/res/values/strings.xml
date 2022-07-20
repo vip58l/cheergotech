@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">晴果教师版</string>
+    <string name="app_name">晴果智慧校园-教师端</string>
     <string name="titlename">标题名称</string>
     <string name="s1">松开结束录音</string>
     <string name="s2">按住并说话</string>
@@ -174,4 +174,7 @@
     <string name="dialog5">如果您同意，请点击下方按钮以接受我们的服务.</string>
     <string name="tm18">晴果智慧校园用户协议</string>
     <string name="tm1811">晴果智慧校园隐私权协议</string>
+    <string name="back1">选择调课对象</string>
+    <string name="back2">审批人/抄送人</string>
+    <string name="newitem">新建事项</string>
 </resources>

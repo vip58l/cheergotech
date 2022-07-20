@@ -50,8 +50,7 @@
             android:background="@drawable/e11"
             android:gravity="left|top"
             android:maxLines="5"
-            android:minLines="3"
-            android:padding="@dimen/dp10" />
+            android:minLines="3" />
 
         <com.cheergotech.widget.widgetimage7
             android:layout_width="match_parent"
@@ -60,7 +59,7 @@
             android:padding="@dimen/dp10"
             app:w7_msg1=""
             app:w7_msg2=""
-            app:w7_name="今日评价" />
+            app:w7_name="今日表现" />
 
         <LinearLayout
             android:layout_width="300dp"

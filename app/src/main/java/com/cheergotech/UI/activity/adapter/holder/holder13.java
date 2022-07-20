@@ -1,4 +1,4 @@
-package com.cheergotech.UI.activity.adapter;
+package com.cheergotech.UI.activity.adapter.holder;
 
 import android.content.Context;
 import android.text.TextUtils;

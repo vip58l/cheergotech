@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="归还" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backtitle"
+        android:layout_marginTop="@dimen/dp10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="8dp"
+                    android:layout_height="21dp"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:text="*"
+                    android:textColor="#ffff0000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="照片"
+                    android:textColor="#ff202020"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:text="拍摄照片，用于管理员验收"
+                    android:textColor="#ffb0bde1"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:src="@mipmap/camera1" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.cheergotech.widget.widgetimage23
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@color/white"
+            app:t23_name1="备注"
+            app:t23_name2="可填写备注说明" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sendbtton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/it325dp"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="#ffffffff"
+        android:textSize="17sp" />
+
+</RelativeLayout>

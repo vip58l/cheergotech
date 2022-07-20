@@ -18,6 +18,7 @@ public class holder15 extends BaseHolder {
 
     public holder15(Context context, ViewGroup parent, int viewType) {
         super(LayoutInflater.from(context).inflate(R.layout.item_text_page, parent, false));
+        this.context=context;
     }
 
     @Override

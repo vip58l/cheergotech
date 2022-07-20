@@ -39,6 +39,14 @@
             app:w15_src2="@mipmap/homea_2" />
 
         <com.cheergotech.widget.widgetimage15
+            android:id="@+id/widss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:w15_src1="@mipmap/homec_1"
+            app:w15_src2="@mipmap/homec_2" />
+
+        <com.cheergotech.widget.widgetimage15
             android:id="@+id/widgetimage2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

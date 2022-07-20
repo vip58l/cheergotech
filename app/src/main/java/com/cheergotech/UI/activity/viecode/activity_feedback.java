@@ -299,6 +299,7 @@ public class activity_feedback extends BaseActivity {
                 Image selectImage = mSelectImages.get(i);
                 String path = selectImage.getPath();
                 File file = new File(path);
+
                 //Android 图片压缩之鲁班Luban详解
                 Luban.with(context).load(file).ignoreBy(100).filter(new CompressionPredicate() {
                     @Override

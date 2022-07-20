@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="评优" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/backtitle"
+        android:layout_marginBottom="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                app:t23_name1="张萌发起的会议事项"
+                app:t23_name2="三年级教师组"
+                app:t23_show1="true" />
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                app:t23_name1="评优类型"
+                app:t23_name2="优秀三好学生"
+                app:t23_show2="true" />
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                app:t23_name1="评优说明"
+                app:t23_name2="评选三3班本学期优秀三好学生，请老师们从成
+绩、品格、日常纪律三个作为考量进行投票，投
+票截止日后由票数最高的三名学生当选"
+                app:t23_show2="true" />
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                app:t23_name1="提名人员(6)"
+                app:t23_name2="王梦一、张雅兰、刘军、马冬梅、查里、
+何媛媛"
+                app:t23_show2="true" />
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                app:t23_name1="投票规则"
+                app:t23_name2="可投三票"
+                app:t23_show2="true" />
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp1"
+                app:t23_name1="投票启动时间"
+                app:t23_name2="2022-05-06 08:00"
+                app:t23_show2="true" />
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp1"
+                app:t23_name1="投票截止时间"
+                app:t23_name2="2022-05-06 08:00"
+                app:t23_show2="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="排行榜"
+                        android:textColor="#ff000000"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/sp12"
+                        android:text="距离结束 96:38:06"
+                        android:textColor="#ff0077ff"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/dp10" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

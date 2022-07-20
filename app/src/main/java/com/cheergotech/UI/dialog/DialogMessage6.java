@@ -45,7 +45,13 @@ public class DialogMessage6 extends BaseDialog {
     }
 
     public static void show(Context context, String s1, String s2, String s3, String s4, CallBcak callBcak) {
-        DialogMessage6 dialogMessage = new DialogMessage6(context, s1, s2, s3,s4, callBcak);
+        DialogMessage6 dialogMessage = new DialogMessage6(context, s1, s2, s3, s4, callBcak);
+        dialogMessage.show();
+    }
+
+    public static void show(Context context, String s1, String s2, String s3, String s4, String s5, CallBcak callBcak) {
+        DialogMessage6 dialogMessage = new DialogMessage6(context, s1, s2, s3, s4, callBcak);
+        dialogMessage.edit.setHint(s5);
         dialogMessage.show();
     }
 
@@ -98,7 +104,6 @@ public class DialogMessage6 extends BaseDialog {
                 break;
             case R.id.send2:
                 break;
-
 
 
         }

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp10"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/dp10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="张萌的请假申请"
+                android:textColor="#ff202020"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp5"
+                android:text="2022-04-16 07:20"
+                android:textColor="#ff929dbb"
+                android:textSize="12sp" />
+
+            <com.cheergotech.widget.widgetimage19
+                android:id="@+id/titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:w2_msg="事假"
+                app:w2_name="请假类型：" />
+
+            <com.cheergotech.widget.widgetimage19
+                android:id="@+id/startTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:w2_msg="2022-03-31 08:00"
+                app:w2_name="开始时间：" />
+
+            <com.cheergotech.widget.widgetimage19
+                android:id="@+id/overTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:w2_msg="2022-04-01 08:00"
+                app:w2_name="结束时间：" />
+
+            <com.cheergotech.widget.widgetimage19
+                android:id="@+id/days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:visibility="gone"
+                app:w2_msg="1天"
+                app:w2_name="请假天数：" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/b11" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

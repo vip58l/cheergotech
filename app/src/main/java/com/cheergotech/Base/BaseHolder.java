@@ -29,5 +29,6 @@ public abstract class BaseHolder extends RecyclerView.ViewHolder {
         }
     }
 
+
     public abstract void bind(Object o, int position, CallBcak callBcak);
 }

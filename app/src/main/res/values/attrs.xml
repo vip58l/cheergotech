@@ -36,6 +36,7 @@
         <attr name="title_right" format="string" />
         <attr name="title_isboolean" format="boolean" />
         <attr name="title_Size" format="dimension" />
+        <attr name="title_src" format="reference|color" />
         <attr name="title_visibility">
             <enum name="visible" value="0" />
             <enum name="invisible" value="4" />
@@ -68,6 +69,33 @@
             <enum name="gone" value="2" />
         </attr>
         <attr name="w1_visibility2">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="widgetimage2">
+        <attr name="w211_name" format="string" />
+        <attr name="w211_msg" format="string" />
+        <attr name="w211_src" format="reference|color" />
+        <attr name="w211_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage3">
+        <attr name="w31_name" format="string" />
+        <attr name="w31_msg" format="string" />
+        <attr name="w31_src" format="reference|color" />
+        <attr name="w31_visibility1">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+            <enum name="gone" value="2" />
+        </attr>
+        <attr name="w31_visibility2">
             <enum name="visible" value="0" />
             <enum name="invisible" value="1" />
             <enum name="gone" value="2" />
@@ -234,15 +262,16 @@
         </attr>
 
     </declare-styleable>
+
     <declare-styleable name="widgetimage18">
         <attr name="w18_name" format="string" />
         <attr name="w18_src" format="reference|color" />
     </declare-styleable>
 
     <declare-styleable name="RatingStar">
-        <attr name="starNormal" format="reference"/>
-        <attr name="starFocus" format="reference"/>
-        <attr name="starNumber" format="integer"/>
+        <attr name="starNormal" format="reference" />
+        <attr name="starFocus" format="reference" />
+        <attr name="starNumber" format="integer" />
     </declare-styleable>
 
     <declare-styleable name="widgetimage20">
@@ -250,4 +279,54 @@
         <attr name="w20_msg1" format="string" />
         <attr name="w20_msg2" format="string" />
     </declare-styleable>
+
+    <declare-styleable name="widgetimage21">
+        <attr name="w21_name1" format="string" />
+        <attr name="w21_name2" format="string" />
+        <attr name="w21_name3" format="string" />
+    </declare-styleable>
+    <declare-styleable name="widgetimage22">
+        <attr name="w22_name1" format="string" />
+        <attr name="w22_name2" format="string" />
+        <attr name="w22_name3" format="string" />
+        <attr name="w22_boot1" format="boolean" />
+        <attr name="w22_boot2" format="boolean" />
+        <attr name="w22_boot3" format="boolean" />
+        <attr name="w22_boot4" format="boolean" />
+        <attr name="w22_rotation" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="Folderfober">
+        <attr name="f_name1" format="string" />
+        <attr name="f_name2" format="string" />
+        <attr name="f_name3" format="string" />
+        <attr name="f_textColor1" format="reference|color" />
+        <attr name="f_textColor2" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="widgtext">
+        <attr name="t_name1" format="string" />
+        <attr name="t_name2" format="string" />
+
+    </declare-styleable>
+    <declare-styleable name="widgeiimage32">
+        <attr name="tt_name1" format="string" />
+        <attr name="tt_name2" format="string" />
+        <attr name="tt_show" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="widgetimage23">
+        <attr name="t23_name1" format="string" />
+        <attr name="t23_name2" format="string" />
+        <attr name="t23_show1" format="boolean" />
+        <attr name="t23_show2" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="widgetimage24">
+        <attr name="t24_name1" format="string" />
+        <attr name="t24_name2" format="string" />
+        <attr name="t24_name3" format="string" />
+        <attr name="t24_show" format="boolean" />
+    </declare-styleable>
+
+
 </resources>

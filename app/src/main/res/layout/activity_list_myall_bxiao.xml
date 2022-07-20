@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="报销" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        android:layout_below="@+id/backtitle"
+        android:layout_marginBottom="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:t23_name1="赵美延的报销申请"
+                app:t23_name2="三年级教师组"
+                app:t23_show1="true" />
+
+            <com.cheergotech.widget.widgetimage22
+                android:id="@+id/widgetimage22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:w22_boot1="true"
+                app:w22_name1="报销总额（元）"
+                app:w22_name2="共2笔"
+                app:w22_name3="70.00" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8FAFF"
+                android:padding="@dimen/dp10"
+                android:text="费用明细(1)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.cheergotech.widget.widgetimage23
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:t23_name1="报销金额（元）"
+                    app:t23_name2="50.8"
+                    app:t23_show2="true" />
+
+                <com.cheergotech.widget.widgetimage23
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:t23_name1="报销金额（元）"
+                    app:t23_name2="50.8"
+                    app:t23_show2="true" />
+
+                <com.cheergotech.widget.widgetimage23
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:t23_name1="费用发生日期"
+                    app:t23_name2="2022-05-06"
+                    app:t23_show2="true" />
+
+                <com.cheergotech.widget.widgetimage23
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:t23_name1="费用类型"
+                    app:t23_name2="办公用品"
+                    app:t23_show2="true" />
+
+            </LinearLayout>
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:t23_name1="归属人"
+                app:t23_name2="赵美延"
+                app:t23_show2="true" />
+
+            <com.cheergotech.widget.widgetimage23
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@color/white"
+                app:t23_name1="备注"
+                app:t23_name2="5月9号周一下午，办公用品统一采购"
+                app:t23_show2="true" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:gravity="bottom"
+        android:padding="@dimen/dp10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/meses3"
+            android:gravity="center"
+            android:text="修改"
+            android:textColor="#ff000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/meses2"
+            android:gravity="center"
+            android:text="评论"
+            android:textColor="#ff000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/meses1"
+            android:gravity="center"
+            android:text="撤销"
+            android:textColor="#ff000000"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

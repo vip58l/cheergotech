@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".UI.activity.workbench.Clockin.activity_xcountkin">
+
+    <com.cheergotech.widget.Backtitle
+        android:id="@+id/backtitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        app:title_name="统计" />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backtitle"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/dp10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4月汇总"
+                android:textColor="#ff000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="24dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/rightback" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.cheergotech.widget.widgtext
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:t_name1="6.5"
+                app:t_name2="平均工时(小时)" />
+
+            <com.cheergotech.widget.widgtext
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:t_name1="3"
+                app:t_name2="迟到(次)" />
+
+            <com.cheergotech.widget.widgtext
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:t_name1="0"
+                app:t_name2="早退(次)" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin1"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dp10"
+                android:text="每日记录"
+                android:textColor="#ff000000"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(4月)"
+                android:textColor="#ff929dbb"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp20"
+
+            android:text="日期控件未添加"
+            android:textColor="#ff929dbb"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp20"
+            android:text="规则：固定上下班 默认班次 07:00-18:00 共2次卡，工时8小时"
+            android:textColor="#ff929dbb"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp20">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lefitli1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s15"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="上班 06:56"
+                        android:textColor="#ff000000"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s12"
+                        android:src="@mipmap/mm1" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:drawableLeft="@mipmap/location"
+                    android:drawablePadding="@dimen/dp5"
+                    android:text="十堰市人民小学"
+                    android:textColor="#ff929dbb"
+                    android:textSize="13sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:text="下班 18:09"
+                    android:textColor="#ff000000"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:drawableLeft="@mipmap/location"
+                    android:drawablePadding="@dimen/dp5"
+                    android:text="十堰市人民小学"
+                    android:textColor="#ff929dbb"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout12"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="对统计结果有疑问？"
+            android:textColor="#ff000000"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="@dimen/dp100"
+            android:layout_height="18dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系管理员"
+            android:textColor="#ff0077ff"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:padding="@dimen/dp10"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_marginLeft="@dimen/dp50"
+            android:layout_marginTop="@dimen/dp10"
+            android:drawableLeft="@mipmap/e11"
+            android:gravity="center"
+
+            android:text="打卡"
+            android:textColor="#ff0077ff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp50"
+            android:drawableLeft="@mipmap/e22"
+            android:gravity="center"
+            android:text="统计"
+            android:textColor="#ff000000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -26,6 +26,9 @@ public interface CallBcak {
     default void OnClick(View view) {
     }
 
+    default void OnClick(View view, int position) {
+    }
+
     default void setOnClickListener(int position) {
     }
 

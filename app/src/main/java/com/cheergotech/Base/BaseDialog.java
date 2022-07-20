@@ -50,6 +50,12 @@ public abstract class BaseDialog extends Dialog {
         getWindow().setWindowAnimations(R.style.BottomDialog_Animation);
     }
 
+    public void WindowManagerCENTER() {
+        getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        getWindow().setGravity(Gravity.CENTER);
+    }
+
+
     @Override
     public void dismiss() {
         super.dismiss();

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp10">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/s43"
+        android:layout_height="@dimen/s43"
+        android:layout_marginRight="@dimen/s15"
+        android:src="@mipmap/icon" />
+
+    <TextView
+        android:layout_width="45dp"
+        android:layout_height="21dp"
+        android:layout_marginRight="@dimen/dp10"
+        android:text="王梦一"
+        android:textColor="#ff202020"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ite5_4"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingTop="@dimen/dp2"
+        android:paddingRight="@dimen/dp10"
+        android:paddingBottom="@dimen/dp2"
+        android:text="组长"
+        android:textColor="#ffffffff"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/suesses01" />
+</LinearLayout>
