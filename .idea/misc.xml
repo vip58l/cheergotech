@@ -66,6 +66,7 @@
         <entry key="..\:/cheergotech/app/src/main/res/drawable/itemrig.xml" value="0.2375" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/items.xml" value="0.3265" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/items25.xml" value="0.2445" />
+        <entry key="..\:/cheergotech/app/src/main/res/drawable/itemsend.xml" value="0.2045" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/itemsend25dp.xml" value="0.362" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/itemsent.xml" value="0.2045" />
         <entry key="..\:/cheergotech/app/src/main/res/drawable/itemsf.xml" value="0.3225" />
@@ -83,7 +84,8 @@
         <entry key="..\:/cheergotech/app/src/main/res/drawable/turnout_progressbar_horizontal.xml" value="0.2615" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_activities.xml" value="0.29628046173578454" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_guihuan_lease.xml" value="0.22" />
-        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_guihuan_lease1.xml" value="0.29628046173578454" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_guihuan_lease1.xml" value="0.22" />
+        <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_guihuan_lease2.xml" value="0.22" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_huiyi.xml" value="0.29628046173578454" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_kuihuiyi.xml" value="0.25" />
         <entry key="..\:/cheergotech/app/src/main/res/layout/acetivity_my_pingyu.xml" value="0.29628046173578454" />

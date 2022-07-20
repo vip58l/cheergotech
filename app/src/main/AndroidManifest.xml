@@ -423,6 +423,9 @@
         <activity android:name=".UI.activity.workbench.matter.acetivity_guihuan_lease" />
         <activity android:name=".UI.activity.workbench.matter.activity_yqdbsx" />
         <activity android:name=".UI.activity.workbench.matter.acetivity_guihuan_lease1" />
+        <activity android:name=".UI.activity.workbench.matter.acetivity_guihuan_lease2" />
+        <activity android:name=".UI.activity.workbench.matter.activity_yqdbsx2" />
+        <activity android:name=".UI.activity.workbench.matter.acetivity_guihuan_lease3" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
